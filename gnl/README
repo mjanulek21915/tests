@@ -1,0 +1,81 @@
+GNL BENCH
+
+
+DESCRIPTION:
+
+	Cet outil est composé de deux scripts, deux main et un fichier de configuration: mk_bench.sh, 
+	mk_fd_error.sh, les main correspondants, main_bench.c et main_fd_error.c, 
+	ainsi qu un fichier "configuration": liste_fichiers.
+
+	mk_bench.sh et mk_fd_error.sh font plus ou moins la meme chose, ils utilisent 
+	le get_next_line, à fournir, pour lire les fichiers dont le nom est specifé dans liste_fichiers.
+
+	Ces fichiers sont lus un par un, par get_next_line, avec une taille de buffer (TAILLE BUFFER), comme specifée,
+	avec get_next_line appelé le nombre de fois spécifié dans les options (ITERATIONS).
+	Cet outil est fourni avec une liste_fichier où tous les separaterus acceptés 
+	sont employés (ainsi que les fichiers-texte correspondants).
+
+	La différence entre mk_bench.sh et mk_fd_error.sh est que ce dernier simule une erreur 
+	de file descriptor lors de la lecture de la dernière iteration, que celle-ci soit une ligne 
+	valide ou une ligne vide.
+
+	Si aucun argument est fourni, mk_bench.sh compile avec une taille buffer egale a 1, et apellera gnl 1 fois.
+	Si aucun argument est fourni, mk_fd_error.sh compile avec une taille buffer egale a 1, et apellera gnl 3 fois, 
+	le dernier appel simulera une erreur de file descriptor.
+
+	Ces scripts sont faits de sorte à détecter l'environnement dans lequel ils sont lancés. 
+	aucun changement aux fichiers .h n'est nécéssaire pour ajuster le fonctionnement entre mac et linux.
+
+	Compile avec le flag -fsanitize=address pour un contrôle basique des fuites de mémoire.
+	pour un test complet, lancer valgrind avec le nom de l executable en paramètre.
+
+
+INSTALLATION:
+
+	Aucune. Cloner ce repo à convénience.
+
+	Ensuite, juste copier (ou git-clone) le dossier contenant les fichiers de get_next_line dans 
+	le dossier contenant les scripts, de sorte a ce que la structure soit: 
+	"quoi que ce soit"/"dossier contenant les scripts"/"dossier contenant les fichiers de get_next_line"
+
+	ex: /Users/aaa/gnl_bench/get_next_line
+	mais aussi: /Users/aaa/truc/brol/gnl_bench/get_next_line
+
+
+CONFIGURATION:
+
+	Dans les scripts mk_bench.sh et mk_fd_error.sh, il y a deux variables qui permettent de controler 
+	deux détails du fonctionnement de cet outil.
+
+	La variable bonus signifie au script respectif est ce que les fichiers a compiler sont les fichiers _bonus.
+	Par defaut cette variable est définie à 0, donc c'est les fichiers de base qui seront testés.
+
+	La variable gnl définit le nom du dossier où se trouveront les fichiers de get_next_line.
+	Par défaut, cette variable est définie à "get_next_line".
+
+	Le fichier "liste_fichiers" contient les noms des fichiers texte avec lesquels get_next_line sera testé.
+	A modifier à convénience.
+	Les noms de fichier devront être séparés par un espace, une tabulation, ou un retour a la ligne. 
+	Ce fichier est déjà configuré. 
+	Les fichiers correspondants sont inclus dans le git: test, test_continu, test_ligne_7+1, test_ligne_8+1, 
+	test_lignes_vides et test_vide)
+
+
+UTILISATION:
+
+	./mk_bench.sh [TAILLE BUFFER] [ITERATIONS]
+	./mk_fd_error.sh [TAILLE BUFFER] [ITERATIONS]
+
+	ex: ./mk_bench.sh 3 10 - apelle get_next_line 10 fois avec un BUFFER_SIZE de 3 
+	sur tous les fichiers spécifiés dans liste_fichiers
+
+	ou: ./mk_bench.sh - apelle get_next line 1 fois avec un BUFFER_SIZE de 1 (valeurs par défaut)
+
+	ou encore: ./mk_fd_error.sh - apelle get_next line 3 fois avec un BUFFER_SIZE de 1. 
+		Simule une erreur de file descriptor a la 3eme itération. (valeurs par défaut)
+	
+
+
+TODO:
+	La version suivante contiendra un script dédié aux tests avec plusieurs descripteurs fichier.
+	Probablement aussi un utilitaire qui permettra de comparer deux get_next_line.
