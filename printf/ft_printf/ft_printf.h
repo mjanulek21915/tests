@@ -51,7 +51,7 @@ typedef struct			s_type
 	long long			temp;
 	char				*ptr_temp;
 	char				*ptr;
-}               		t_type;
+}						t_type;
 
 int						ft_printf(const char *str, ...);
 void					ft_read(char **str, va_list va, int *rst);
