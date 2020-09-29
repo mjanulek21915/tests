@@ -47,7 +47,7 @@ void					ft_pf_write_hex_a(va_list vl, t_type *type, int *rst)
 			type->is_precision = 1;
 		}
 		else if (type->is_width && type->width > 0 && type->is_precision
-		&& type->is_zero && (type->precision < 0)  && !type->is_left)
+		 && type->is_zero && (type->precision < 0)  && !type->is_left)
 			type->precision = type->width;
 		if (type->width < 0)
 		{
