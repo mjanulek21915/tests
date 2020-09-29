@@ -39,6 +39,7 @@ static void				ft_pf_write_ptr_3(t_type *type, int *rst)
 		ft_pf_write_put_base(type->temp, BASE_16, rst);
 	}
 }
+
 static void				ft_pf_write_ptr_2(t_type *type, int *rst)
 {
 	type->len = ft_pf_write_nlen(type->temp, 10);
@@ -53,27 +54,29 @@ static void				ft_pf_write_ptr_2(t_type *type, int *rst)
 
 static void				ft_pf_write_ptr_1(t_type *type)
 {
-		if (type->is_left || type->is_precision == 1 || type->is_width)
-			type->padding = ' ';
-		if (
-		(type->is_zero && type->is_precision && type->precision < 0 && type->is_width && type->width > -1 && !type->is_left))
-		{
-			type->precision = type->width - 2;
-			if (type->is_space || type->is_signed)
-				type->precision = type->precision - 1;
-		}
-		if (type->width < 0)
-		{
-			type->width = -type->width;
-			type->is_left = 1;
-		}
-		if (type->is_width && type->is_zero && !type->is_precision && !type->is_left)
-		{
-			type->is_precision = 1;
-			type->precision = type->width - 2;
-			if (type->is_space || type->is_signed)
-				type->precision = type->precision - 1;
-		}
+	if (type->is_left || type->is_precision == 1 || type->is_width)
+		type->padding = ' ';
+	if (
+	(type->is_zero && type->is_precision && type->precision < 0 &&
+	type->is_width && type->width > -1 && !type->is_left))
+	{
+		type->precision = type->width - 2;
+		if (type->is_space || type->is_signed)
+			type->precision = type->precision - 1;
+	}
+	if (type->width < 0)
+	{
+		type->width = -type->width;
+		type->is_left = 1;
+	}
+	if (type->is_width && type->is_zero && !type->is_precision
+	&& !type->is_left)
+	{
+		type->is_precision = 1;
+		type->precision = type->width - 2;
+		if (type->is_space || type->is_signed)
+			type->precision = type->precision - 1;
+	}
 }
 
 void					ft_pf_write_ptr(va_list vl, t_type *type, int *rst)

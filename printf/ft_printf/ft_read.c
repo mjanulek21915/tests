@@ -12,9 +12,9 @@
 
 #include "ft_printf.h"
 
-static void				ft_read_get_numbers_1(t_type *type, char **str, va_list vl)
+static void				ft_rd_get_nums_1(t_type *type, char **str, va_list vl)
 {
-	int temp;
+	int			temp;
 
 	if (**str == '.')
 	{
@@ -34,9 +34,9 @@ static void				ft_read_get_numbers_1(t_type *type, char **str, va_list vl)
 	}
 }
 
-static void				ft_read_get_numbers(t_type *type, char **str, va_list vl)
+static void				ft_rd_get_nums(t_type *type, char **str, va_list vl)
 {
-	int temp;
+	int			temp;
 
 	temp = ft_read_atoi(str);
 	if (temp > -2)
@@ -50,12 +50,11 @@ static void				ft_read_get_numbers(t_type *type, char **str, va_list vl)
 		else
 			type->width = temp;
 	}
-ft_read_get_numbers_1(type, str, vl);
+	ft_rd_get_nums_1(type, str, vl);
 }
 
 static void				ft_read_get_flags(t_type *type, char **str)
 {
-
 	while (**str == '+' || **str == '-' || **str == '0' || **str == ' ')
 	{
 		if (**str == '+')
@@ -71,33 +70,31 @@ static void				ft_read_get_flags(t_type *type, char **str)
 			type->is_space = 1;
 		(*str)++;
 	}
-
 }
 
 static void					ft_read_init(t_type *type)
 {
-
-type->is_percent = 0;
-type->is_left = 0;
-type->is_signed = 0;
-type->is_space = 0;
-type->is_width = 0;
-type->is_precision = 0;
-type->is_zero = 0;
-type->is_star = 0;
-type->width_star = 0;
-type->prec_star = 0;
-type->padding = ' ';
-type->width = 0;
-type->precision = 0;
-type->type = 0;
-type->sign = 0;
-type->len;
-type->prec_len = 0;
-type->pad_len = 0;
-type->temp = 0;
-type->ptr_temp = 0;
-type->ptr = 0;
+	type->is_percent = 0;
+	type->is_left = 0;
+	type->is_signed = 0;
+	type->is_space = 0;
+	type->is_width = 0;
+	type->is_precision = 0;
+	type->is_zero = 0;
+	type->is_star = 0;
+	type->width_star = 0;
+	type->prec_star = 0;
+	type->padding = ' ';
+	type->width = 0;
+	type->precision = 0;
+	type->type = 0;
+	type->sign = 0;
+	type->len;
+	type->prec_len = 0;
+	type->pad_len = 0;
+	type->temp = 0;
+	type->ptr_temp = 0;
+	type->ptr = 0;
 }
 
 void						ft_read(char **str, va_list vl, int *rst)
@@ -106,9 +103,10 @@ void						ft_read(char **str, va_list vl, int *rst)
 	char		*temp;
 	temp = *str;
 	temp++;
+
 	ft_read_init(&type);
 	ft_read_get_flags(&type, &temp);
-	ft_read_get_numbers(&type, &temp, vl);
+	ft_rd_get_nums(&type, &temp, vl);
 	if (!(ft_read_iz_in(*temp, CONV)))
 		return ;
 	type.type = *temp;
