@@ -15,7 +15,6 @@
 static void			ft_pf_pb_rec(long long n, char *base, int len, int *rst)
 {
 	long long	temp;
-	int			i;
 
 	temp = n % len;
 	if (n > len - 1)

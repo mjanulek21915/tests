@@ -12,10 +12,13 @@
 
 NAME = libftprintf.a
 
-SRC = 
-
-
-SRC_BONUS = 
+SRC = ft_pf_putchar.c ft_pf_putstr.c ft_pf_strlen.c ft_pf_write_char.c \
+ft_pf_write_get_sign.c ft_pf_write_hex.c ft_pf_write_hex_a.c \
+ft_pf_write_int.c ft_pf_write_n.c ft_pf_write_nlen.c ft_pf_write_padding.c \
+ft_pf_write_percent.c ft_pf_write_int.c ft_pf_write_n.c ft_pf_write_nlen.c \
+ft_pf_write_padding.c ft_pf_write_percent.c ft_pf_write_ptr.c \
+ft_pf_write_put_base.c ft_pf_write_str.c ft_pf_write_uint.c ft_printf.c \
+ft_read_atoi.c ft_read_iz_in.c ft_read.c ft_write.c
 
 CC = gcc
 
@@ -23,17 +26,17 @@ CFLAGS = -Wall -Wextra -Werror
 
 OBJ = $(SRC:.c=.o)
 
-OBJ_BONUS = $(SRC_BONUS:.c=.o)
-
 all: ${NAME}
 
-$(NAME): ${OBJ} ${OBJ_BONUS}
-	@ar rc ${NAME} ${OBJ} ${OBJ_BONUS}
+$(NAME): ${OBJ}
+	@ar rc ${NAME} ${OBJ}
+
+bonus: all
 
 %.o: %.c
 	@${CC} ${CFLAGS} -c -o $@ $?
 clean:
-	@rm -f ${OBJ} ${OBJ_BONUS}
+	@rm -f ${OBJ}
 
 fclean:	clean
 	@rm -f $(NAME) 

@@ -89,7 +89,7 @@ static void					ft_read_init(t_type *type)
 	type->precision = 0;
 	type->type = 0;
 	type->sign = 0;
-	type->len;
+	type->len = 0;
 	type->prec_len = 0;
 	type->pad_len = 0;
 	type->temp = 0;

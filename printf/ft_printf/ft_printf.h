@@ -58,6 +58,7 @@ void					ft_read(char **str, va_list va, int *rst);
 int						ft_pf_strlen(char *str);
 void					ft_write(t_type *type, va_list va, int *rst);
 void					ft_pf_putchar(char *ptr, int *rst);
+void					ft_pf_putstr(char *str, int *rst);
 int						ft_pf_write_get_sign(long long *temp, t_type *type);
 int						ft_pf_write_nlen(long long n, int base);
 void					ft_pf_write_n(char *str, int n, int *rst);
