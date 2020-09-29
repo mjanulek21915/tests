@@ -1,8 +1,8 @@
 ./mk.sh
 
-random=1
+random=0
 multiple_flags=1
-precision=1
+precision=0
 show_all=0
 
 
@@ -12,7 +12,7 @@ text_list=("|" )
 flag_list=("r" " " "-" "+" "0")
 width_list=("r" '*' "0" "1" "3" "4" "5" "42")
 prec_list=("r" '.*' ".0" ".1" ".3" ".4" ".5" ".42")
-conv_list=("c" "s" "p" "d" "i" "u" "x" "X" "%")
+conv_list=("%")
 count_list=("0" "-1" "1" "-3" "3" "-4" "4" "-5" "5" "-42" "42")
 whole_list=("r" " " "-" "+" "0" '*' "1" '.*' ".0" ".1")
 path="logs/log_$start"
@@ -227,7 +227,7 @@ if [ $multiple_flags -eq 1 ]
 then
 	width_list=("r" '*' "1" "12")
 	prec_list=("r" '.*' ".1" ".12")
-	count_list=("12" "-12")
+	count_list=("6" "-6" "12" "-12")
 	old_ifs=$IFS
 	IFS=""
 	for conv in "${conv_list[@]}"
