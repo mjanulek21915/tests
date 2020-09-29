@@ -1,8 +1,8 @@
 ./mk.sh
 
-random=0
+random=1
 multiple_flags=1
-precision=0
+precision=1
 show_all=0
 
 
@@ -23,8 +23,14 @@ if [ $random -eq 1 ]
 then
 	for conv in "${conv_list[@]}"
 	do
-		log_diff="${path}/log_diff_rnd_${conv}_${start}"
-		log_segfault="${path}/log_segfault_rnd_${conv}_${start}"
+		if [ $conv == "X" ]
+		then
+			log_diff="${path}/log_diff_precision_random_x_big_${start}"
+			log_segfault="${path}/log_segfault_precision_random_x_big_${start}"
+		else
+			log_diff="${path}/log_diff_precision_random_${conv}_${start}"
+			log_segfault="${path}/log_segfault_precision_random_${conv}_${start}"
+		fi
 		echo "LOG_DIFF conv : ${conv}">$log_diff
 		echo "LOG_SEGFAULT conv : ${conv}">$log_segfault
 		for text in "${text_list[@]}"
@@ -80,17 +86,18 @@ fi
 
 if [ $precision -eq 1 ]
 then
-	# text_list=("|" )
-	# flag_list=("r" " " "-" "+" "0")
-	# width_list=("r" '*' "0" "1" "3" "4" "5" "42")
-	# prec_list=("r" '.*' ".0" ".1" ".3" ".4" ".5" ".42")
-	# count_list=("0" "-1" "1" "-3" "3" "-4" "4" "-5" "5" "-42" "42")
 	old_ifs=$IFS
 	IFS=""
 	for conv in "${conv_list[@]}"
 	do
-		log_diff="${path}/log_diff_precision_ref_${conv}_${start}"
-		log_segfault="${path}/log_segfault_precision_ref_${conv}_${start}"
+		if [ $conv == "X" ]
+		then
+			log_diff="${path}/log_diff_precision_ref_x_big_${start}"
+			log_segfault="${path}/log_segfault_precision_ref_x_big_${start}"
+		else
+			log_diff="${path}/log_diff_precision_ref_${conv}_${start}"
+			log_segfault="${path}/log_segfault_precision_ref_${conv}_${start}"
+		fi
 		echo "LOG_DIFF conv : ${conv}">$log_diff
 		echo "LOG_SEGFAULT conv : ${conv}">$log_segfault
 		for text in "${text_list[@]}"
@@ -225,8 +232,14 @@ then
 	IFS=""
 	for conv in "${conv_list[@]}"
 	do
-		log_diff="${path}/log_diff_multiple_flags_ref_${conv}_${start}"
-		log_segfault="${path}/log_segfault_multiple_flags_ref_${conv}_${start}"
+		if [ $conv == "X" ]
+		then
+			log_diff="${path}/log_diff_precision_multiple_flags_x_big_${start}"
+			log_segfault="${path}/log_segfault_precision_multiple_flags_x_big_${start}"
+		else
+			log_diff="${path}/log_diff_precision_multiple_flags_${conv}_${start}"
+			log_segfault="${path}/log_segfault_precision_multiple_flags_${conv}_${start}"
+		fi
 		echo "LOG_DIFF conv : ${conv}">$log_diff
 		echo "LOG_SEGFAULT conv : ${conv}">$log_segfault
 		for text in "${text_list[@]}"
