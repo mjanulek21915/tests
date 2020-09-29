@@ -34,16 +34,15 @@ static void				ft_pf_write_uint_2(t_type *type, int *rst)
 	}
 }
 
-
 void					ft_pf_write_uint(va_list vl, t_type *type, int *rst)
-{	
+{
 	if (type->type == 'u')
 	{
 		if (type->is_left || type->is_precision == 1 || type->is_width)
 			type->padding = ' ';
 		if (type->is_width && !type->is_precision && type->is_zero == 1
 		&& !type->is_left)
-		{	
+		{
 			type->precision = type->width;
 			type->is_precision = 1;
 		}
