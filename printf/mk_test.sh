@@ -1,0 +1,1 @@
+gcc -I . ft*.c main_test.c read/*.c write/*.c -w
