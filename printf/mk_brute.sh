@@ -12,7 +12,7 @@ text_list=("|" )
 flag_list=("r" " " "-" "+" "0")
 width_list=("r" '*' "0" "1" "3" "4" "5" "42")
 prec_list=("r" '.*' ".0" ".1" ".3" ".4" ".5" ".42")
-conv_list=("c" "s" "p" "d" "i" "u" "x" "X" "%")
+conv_list=("c")
 count_list=("0" "-1" "1" "-3" "3" "-4" "4" "-5" "5" "-42" "42")
 whole_list=("r" " " "-" "+" "0" '*' "1" '.*' ".0" ".1")
 path="logs/log_$start"
@@ -125,7 +125,7 @@ then
 									then
 										echo "    TEST VIDE : ${fmt//"r"} COUNT : $count" 
 										echo ""
-										echo "TEST VIDE : ${fmt//"r"}" >> $log_diff
+										echo "TEST VIDE : ${fmt//"r"} COUNT : $count" >> $log_diff
 										echo "test : ${temp_test}" >> $log_diff
 										echo "ref. : ${temp_ref}" >> $log_diff
 										echo "" >> $log_diff
@@ -133,7 +133,7 @@ then
 									then
 										echo "    DIFF : ${fmt//"r"} COUNT : $count" 
 										echo ""
-										echo "DIFF : ${fmt//"r"}" >> $log_diff
+										echo "DIFF : ${fmt//"r"} COUNT : $count" >> $log_diff
 										echo "test : ${temp_test}" >> $log_diff
 										echo "ref. : ${temp_ref}" >> $log_diff
 										echo "" >> $log_diff
@@ -161,7 +161,7 @@ then
 										then
 											echo "    TEST VIDE : ${fmt//"r"} COUNTS : $count $count_b" 
 											echo ""
-											echo "TEST VIDE : ${fmt//"r"}" >> $log_diff
+											echo "TEST VIDE : ${fmt//"r"} COUNTS : $count $count_b" >> $log_diff
 											echo "test : ${temp_test}" >> $log_diff
 											echo "ref. : ${temp_ref}" >> $log_diff
 											echo "" >> $log_diff
@@ -169,7 +169,7 @@ then
 										then
 											echo "    DIFF : ${fmt//"r"} COUNTS : $count $count_b" 
 											echo ""
-											echo "DIFF : ${fmt//"r"}" >> $log_diff
+											echo "DIFF : ${fmt//"r"} COUNTS : $count $count_b" >> $log_diff
 											echo "test : ${temp_test}" >> $log_diff
 											echo "ref. : ${temp_ref}" >> $log_diff
 											echo "" >> $log_diff

@@ -55,27 +55,41 @@ static void				ft_pf_write_ptr_1(t_type *type)
 {
 		if (type->is_left || type->is_precision == 1 || type->is_width)
 			type->padding = ' ';
+		if (
+		(type->is_zero && type->is_precision && type->precision < 0 && type->is_width && type->width > -1 && !type->is_left))
+		{
+			type->precision = type->width - 2;
+			if (type->is_space || type->is_signed)
+				type->precision = type->precision - 1;
+		}
 		if (type->width < 0)
 		{
 			type->width = -type->width;
 			type->is_left = 1;
 		}
-		if (type->is_width && !type->is_precision && type->is_zero
-		&& !type->is_left)
-		{	
-			type->precision = type->width - 2;
-			type->is_precision = 1;
-			if (type->is_space || type->is_signed)
-				type->precision = type->precision - 1;
-			type->width = 0;
-		}
-		else if (type->is_width && type->width > 0 && type->is_precision
-		&& type->is_zero && type->precision < 0 && !type->is_left)
+		if (type->is_width && type->is_zero && !type->is_precision && !type->is_left)
 		{
+			type->is_precision = 1;
 			type->precision = type->width - 2;
 			if (type->is_space || type->is_signed)
 				type->precision = type->precision - 1;
 		}
+
+
+		// if (type->is_width && !type->is_precision && type->is_zero
+		// && !type->is_left)
+		// {	
+		// 	type->precision = type->width - 2;
+		// 	type->is_precision = 1;
+		// 	if (type->is_space || type->is_signed)
+		// 		type->precision = type->precision - 1;
+		// 	type->width = 0;
+		// }
+		// else if (type->is_width && type->width > 0 && type->is_precision
+		// && type->is_zero && type->precision < 0 && !type->is_left)
+		// {
+		// 	type->precision = type->width - 2;
+		// }
 }
 
 void					ft_pf_write_ptr(va_list vl, t_type *type, int *rst)
@@ -84,6 +98,6 @@ void					ft_pf_write_ptr(va_list vl, t_type *type, int *rst)
 	{
 		ft_pf_write_ptr_1(type);
 		type->temp = (long)va_arg(vl, unsigned int);
-		ft_pf_write_ptr_2(type, rst, vl);
+		ft_pf_write_ptr_2(type, rst);
 	}
 }

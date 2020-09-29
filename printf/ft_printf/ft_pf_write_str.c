@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-static void				ft_pf_write_str_2(t_type *type int *rst)
+static void				ft_pf_write_str_2(t_type *type, int *rst)
 {
 		if (type->is_left)
 		{
@@ -45,5 +45,6 @@ void					ft_pf_write_str(va_list vl, t_type *type, int *rst)
 		type->pad_len = type->width - type->len;
 		if (type->pad_len < 0)
 			type->pad_len = 0;
+		ft_pf_write_str_2(type, rst);
 	}
 }

@@ -14,7 +14,6 @@
 
 static void				ft_pf_write_uint_2(t_type *type, int *rst)
 {
-	type->temp = (unsigned int)va_arg(vl, int);
 	type->len = ft_pf_write_nlen(type->temp, 10);
 	type->prec_len = type->precision - type->len;
 	type->prec_len = (type->prec_len > 0) ? type->prec_len : 0;
@@ -56,6 +55,7 @@ void					ft_pf_write_uint(va_list vl, t_type *type, int *rst)
 			type->width = -type->width;
 			type->is_left = 1;
 		}
+		type->temp = (unsigned int)va_arg(vl, int);
 		ft_pf_write_uint_2(type, rst);
 	}
 }
