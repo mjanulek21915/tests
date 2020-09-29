@@ -69,24 +69,28 @@ static void				ft_read_get_flags(t_type *type, char **str)
 
 static void					ft_read_init(t_type *type)
 {
-	type->is_percent = 0;
-	type->is_left = 0;
-	type->is_signed = 0;
-	type->is_space = 0;
-	type->is_precision = 0;
-	type->is_width = 0;
-	type->is_zero = 0;
-	type->width_star = 0;
-	type->prec_star = 0;
-	type->padding = ' ';
-	type->width = 0;
-	type->precision = 0;
-	type->type = 0;
-	type->sign = 0;
-	type->len = 0;
-	type->prec_len = 0;
-	type->pad_len = 0;
-	type->temp = 0;
+
+type->is_percent = 0;
+type->is_left = 0;
+type->is_signed = 0;
+type->is_space = 0;
+type->is_width = 0;
+type->is_precision = 0;
+type->is_zero = 0;
+type->is_star = 0;
+type->width_star = 0;
+type->prec_star = 0;
+type->padding = ' ';
+type->width = 0;
+type->precision = 0;
+type->type = 0;
+type->sign = 0;
+type->len;
+type->prec_len = 0;
+type->pad_len = 0;
+type->temp = 0;
+type->ptr_temp = 0;
+type->ptr = 0;
 }
 
 void						ft_read(char **str, va_list vl, int *rst)
