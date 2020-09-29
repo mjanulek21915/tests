@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-static void				ft_rd_get_nums_1(t_type *type, char **str, va_list vl)
+static void					ft_rd_get_nums_1(t_type *type, char **str, va_list vl)
 {
 	int			temp;
 
@@ -34,7 +34,7 @@ static void				ft_rd_get_nums_1(t_type *type, char **str, va_list vl)
 	}
 }
 
-static void				ft_rd_get_nums(t_type *type, char **str, va_list vl)
+static void					ft_rd_get_nums(t_type *type, char **str, va_list vl)
 {
 	int			temp;
 
@@ -53,7 +53,7 @@ static void				ft_rd_get_nums(t_type *type, char **str, va_list vl)
 	ft_rd_get_nums_1(type, str, vl);
 }
 
-static void				ft_read_get_flags(t_type *type, char **str)
+static void					ft_read_get_flags(t_type *type, char **str)
 {
 	while (**str == '+' || **str == '-' || **str == '0' || **str == ' ')
 	{
@@ -101,9 +101,9 @@ void						ft_read(char **str, va_list vl, int *rst)
 {
 	t_type		type;
 	char		*temp;
+
 	temp = *str;
 	temp++;
-
 	ft_read_init(&type);
 	ft_read_get_flags(&type, &temp);
 	ft_rd_get_nums(&type, &temp, vl);
