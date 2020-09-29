@@ -1,0 +1,10501 @@
+LOG_DIFF conv : s
+DIFF : |%0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% +0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% +012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0  *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0  12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 +*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 +12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+ *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+ 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0++*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0++12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%000*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% +0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% +012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%   0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%   0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%   0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%   0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%   0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%   012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%   012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%   012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%   012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%   012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  +0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  +0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  +0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  +0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  +0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  +012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  +012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  +012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  +012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  +012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%  0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%  0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% +0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% +012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% + 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% + 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% + 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% + 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% + 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% + 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% + 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% + 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% + 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% + 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% ++0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% ++0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% ++0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% ++0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% ++0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% ++012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% ++012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% ++012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% ++012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% ++012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% +0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% +012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% +0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% +0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% +0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% +0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% +00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% +0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% +0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0  *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0  *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0  *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0  *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0  *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0  12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0  12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0  12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0  12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0  12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 +*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 +*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 +*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 +*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0 +*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 +12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 +12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 +12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 +12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0 +12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+ *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+ *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+ *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+ *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0+ *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+ 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+ 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+ 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+ 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0+ 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0++*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0++*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0++*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0++*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0++*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0++12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0++12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0++12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0++12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0++12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0+0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0+012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0+012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 00 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 00 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 00+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 00+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 000*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 000*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 000*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 000*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 000*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |% 00012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |% 00012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+  0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+  0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+  0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+  0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+  0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+  012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+  012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+  012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+  012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+  012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ +0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ +0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ +0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ +0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ +0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ +012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ +012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ +012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ +012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ +012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ 0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ 0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ 0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ 0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ 00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+ 0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+ 0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++ 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++ 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++ 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++ 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++ 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++ 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++ 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++ 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++ 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++ 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+++0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+++0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+++0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+++0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+++0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+++012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+++012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+++012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+++012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+++012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%++0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%++0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0  *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0  *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0  *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0  *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0  *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0  12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0  12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0  12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0  12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0  12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 +*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 +*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 +*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 +*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0 +*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 +12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 +12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 +12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 +12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0 +12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+ *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+ *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+ *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+ *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0+ *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+ 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+ 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+ 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+ 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0+ 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0++*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0++*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0++*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0++*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0++*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0++12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0++12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0++12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0++12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0++12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0+0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0+012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0+012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+00 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+00 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+00+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+00+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+000*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+000*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+000*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+000*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+000*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%+00012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%+00012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0  *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0  12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 +*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 +12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+ *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+ 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0++*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0++12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%000*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0  *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0  12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 +*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 +12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0  *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0  12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0   *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0   *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0   *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0   *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0   *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0   12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0   12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0   12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0   12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0   12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  +*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  +*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  +*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  +*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0  +*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  +12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  +12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  +12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  +12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0  +12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0  0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0  012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0  012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 +*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 +12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 + *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 + *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 + *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 + *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 + *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 + 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 + 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 + 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 + 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 + 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 ++*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 ++*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 ++*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 ++*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 ++*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 ++12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 ++12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 ++12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 ++12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 ++12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 +0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 +012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 +012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0 0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0 0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+ *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+ 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0++*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0++12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+ *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+ 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+  *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+  *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+  *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+  *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+  *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+  12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+  12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+  12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+  12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+  12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ +*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ +*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ +*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ +*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+ +*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ +12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ +12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ +12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ +12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+ +12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+ 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+ 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+ 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0++*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0++12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++ *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++ *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++ *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++ *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0++ *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++ 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++ 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++ 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++ 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0++ 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+++*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+++*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+++*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+++*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+++*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+++12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+++12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+++12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+++12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+++12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0++0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0++012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0++012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+0 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+0 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+0+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+0+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0+0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0+0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%000*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00  *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00  *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00  *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00  *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00  *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00  12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00  12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00  12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00  12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00  12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 +*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 +*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 +*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 +*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00 +*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 +12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 +12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 +12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 +12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00 +12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00 0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00 012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00 012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+ *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+ *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+ *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+ *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00+ *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+ 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+ 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+ 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+ 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00+ 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00++*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00++*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00++*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00++*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00++*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00++12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00++12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00++12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00++12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00++12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+0*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+0*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+0*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+0*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00+0*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00+012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00+012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%000*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%00012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%00012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000 *s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000 *.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000 *.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000 *.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%000 *.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000 12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000 12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000 12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000 12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%000 12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000+*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000+*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000+*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000+*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%000+*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000+12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000+12.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000+12.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000+12.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%000+12.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0000*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0000*.*s| COUNTS : 12 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0000*.*s| COUNTS : 12 -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%0000*.1s| COUNT : 12
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%0000*.12s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000012s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000012.*s| COUNT : 12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000012.*s| COUNT : -12
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+
+DIFF : |%000012.1s|
+test : |           c|
+rst = 14
+ref. : |00000000000c|
+rst = 14
+
+DIFF : |%000012.12s|
+test : |        cesi|
+rst = 14
+ref. : |00000000cesi|
+rst = 14
+

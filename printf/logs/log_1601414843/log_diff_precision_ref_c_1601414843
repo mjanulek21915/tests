@@ -1,0 +1,6049 @@
+LOG_DIFF conv : c
+DIFF : |%0*c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 3 0
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 -1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 -3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 -4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 -5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 -42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 4 0
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 -1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 -3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 -4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 -5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 -42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 5 0
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 -1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 -3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 -4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 -5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 -42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 42 0
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 -1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 -3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 -4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 -5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 -42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.0c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.0c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.0c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.0c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.1c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.1c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.1c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.1c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.3c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.3c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.3c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.3c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.4c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.4c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.4c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.4c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.5c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.5c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.5c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.5c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.42c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.42c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.42c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.42c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%03c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : 0
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : -1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : 1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : -3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : -4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : 4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : -5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : 5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : -42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : 42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.0c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.1c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.3c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.4c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.5c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.42c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%04c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : 0
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : -1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : 1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : -3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : 3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : -4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : -5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : 5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : -42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : 42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.0c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.1c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.3c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.4c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.5c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.42c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%05c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : 0
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : -1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : 1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : -3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : 3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : -4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : 4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : -5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : -42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : 42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.0c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.1c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.3c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.4c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.5c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.42c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%042c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : 0
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : -1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : 1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : -3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : 3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : -4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : 4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : -5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : 5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : -42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.0c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.1c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.3c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.4c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.5c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.42c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.*c| COUNTS : 3 0
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.*c| COUNTS : 3 -1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.*c| COUNTS : 3 1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.*c| COUNTS : 3 -3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.*c| COUNTS : 3 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.*c| COUNTS : 3 -4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.*c| COUNTS : 3 4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.*c| COUNTS : 3 -5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.*c| COUNTS : 3 5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.*c| COUNTS : 3 -42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.*c| COUNTS : 3 42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.*c| COUNTS : 4 0
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.*c| COUNTS : 4 -1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.*c| COUNTS : 4 1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.*c| COUNTS : 4 -3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.*c| COUNTS : 4 3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.*c| COUNTS : 4 -4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.*c| COUNTS : 4 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.*c| COUNTS : 4 -5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.*c| COUNTS : 4 5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.*c| COUNTS : 4 -42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.*c| COUNTS : 4 42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.*c| COUNTS : 5 0
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.*c| COUNTS : 5 -1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.*c| COUNTS : 5 1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.*c| COUNTS : 5 -3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.*c| COUNTS : 5 3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.*c| COUNTS : 5 -4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.*c| COUNTS : 5 4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.*c| COUNTS : 5 -5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.*c| COUNTS : 5 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.*c| COUNTS : 5 -42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.*c| COUNTS : 5 42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.*c| COUNTS : 42 0
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.*c| COUNTS : 42 -1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.*c| COUNTS : 42 1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.*c| COUNTS : 42 -3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.*c| COUNTS : 42 3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.*c| COUNTS : 42 -4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.*c| COUNTS : 42 4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.*c| COUNTS : 42 -5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.*c| COUNTS : 42 5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.*c| COUNTS : 42 -42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.*c| COUNTS : 42 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.0c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.0c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.0c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.0c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.1c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.1c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.1c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.1c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.3c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.3c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.3c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.3c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.4c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.4c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.4c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.4c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.5c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.5c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.5c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.5c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 0*.42c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 0*.42c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 0*.42c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 0*.42c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 03c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.*c| COUNT : 0
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.*c| COUNT : -1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.*c| COUNT : 1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.*c| COUNT : -3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.*c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.*c| COUNT : -4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.*c| COUNT : 4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.*c| COUNT : -5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.*c| COUNT : 5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.*c| COUNT : -42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.*c| COUNT : 42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.0c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.1c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.3c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.4c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.5c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 03.42c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |% 04c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.*c| COUNT : 0
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.*c| COUNT : -1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.*c| COUNT : 1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.*c| COUNT : -3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.*c| COUNT : 3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.*c| COUNT : -4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.*c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.*c| COUNT : -5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.*c| COUNT : 5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.*c| COUNT : -42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.*c| COUNT : 42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.0c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.1c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.3c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.4c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.5c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 04.42c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |% 05c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.*c| COUNT : 0
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.*c| COUNT : -1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.*c| COUNT : 1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.*c| COUNT : -3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.*c| COUNT : 3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.*c| COUNT : -4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.*c| COUNT : 4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.*c| COUNT : -5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.*c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.*c| COUNT : -42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.*c| COUNT : 42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.0c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.1c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.3c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.4c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.5c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 05.42c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |% 042c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.*c| COUNT : 0
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.*c| COUNT : -1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.*c| COUNT : 1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.*c| COUNT : -3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.*c| COUNT : 3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.*c| COUNT : -4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.*c| COUNT : 4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.*c| COUNT : -5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.*c| COUNT : 5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.*c| COUNT : -42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.*c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.0c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.1c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.3c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.4c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.5c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |% 042.42c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.*c| COUNTS : 3 0
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.*c| COUNTS : 3 -1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.*c| COUNTS : 3 1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.*c| COUNTS : 3 -3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.*c| COUNTS : 3 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.*c| COUNTS : 3 -4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.*c| COUNTS : 3 4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.*c| COUNTS : 3 -5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.*c| COUNTS : 3 5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.*c| COUNTS : 3 -42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.*c| COUNTS : 3 42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.*c| COUNTS : 4 0
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.*c| COUNTS : 4 -1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.*c| COUNTS : 4 1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.*c| COUNTS : 4 -3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.*c| COUNTS : 4 3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.*c| COUNTS : 4 -4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.*c| COUNTS : 4 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.*c| COUNTS : 4 -5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.*c| COUNTS : 4 5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.*c| COUNTS : 4 -42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.*c| COUNTS : 4 42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.*c| COUNTS : 5 0
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.*c| COUNTS : 5 -1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.*c| COUNTS : 5 1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.*c| COUNTS : 5 -3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.*c| COUNTS : 5 3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.*c| COUNTS : 5 -4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.*c| COUNTS : 5 4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.*c| COUNTS : 5 -5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.*c| COUNTS : 5 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.*c| COUNTS : 5 -42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.*c| COUNTS : 5 42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.*c| COUNTS : 42 0
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.*c| COUNTS : 42 -1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.*c| COUNTS : 42 1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.*c| COUNTS : 42 -3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.*c| COUNTS : 42 3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.*c| COUNTS : 42 -4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.*c| COUNTS : 42 4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.*c| COUNTS : 42 -5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.*c| COUNTS : 42 5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.*c| COUNTS : 42 -42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.*c| COUNTS : 42 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.0c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.0c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.0c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.0c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.1c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.1c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.1c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.1c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.3c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.3c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.3c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.3c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.4c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.4c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.4c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.4c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.5c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.5c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.5c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.5c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+0*.42c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+0*.42c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+0*.42c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+0*.42c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+03c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.*c| COUNT : 0
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.*c| COUNT : -1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.*c| COUNT : 1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.*c| COUNT : -3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.*c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.*c| COUNT : -4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.*c| COUNT : 4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.*c| COUNT : -5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.*c| COUNT : 5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.*c| COUNT : -42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.*c| COUNT : 42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.0c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.1c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.3c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.4c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.5c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+03.42c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%+04c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.*c| COUNT : 0
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.*c| COUNT : -1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.*c| COUNT : 1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.*c| COUNT : -3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.*c| COUNT : 3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.*c| COUNT : -4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.*c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.*c| COUNT : -5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.*c| COUNT : 5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.*c| COUNT : -42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.*c| COUNT : 42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.0c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.1c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.3c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.4c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.5c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+04.42c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%+05c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.*c| COUNT : 0
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.*c| COUNT : -1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.*c| COUNT : 1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.*c| COUNT : -3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.*c| COUNT : 3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.*c| COUNT : -4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.*c| COUNT : 4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.*c| COUNT : -5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.*c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.*c| COUNT : -42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.*c| COUNT : 42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.0c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.1c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.3c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.4c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.5c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+05.42c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%+042c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.*c| COUNT : 0
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.*c| COUNT : -1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.*c| COUNT : 1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.*c| COUNT : -3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.*c| COUNT : 3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.*c| COUNT : -4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.*c| COUNT : 4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.*c| COUNT : -5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.*c| COUNT : 5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.*c| COUNT : -42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.*c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.0c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.1c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.3c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.4c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.5c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%+042.42c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 3 0
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 -1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 -3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 -4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 -5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 -42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 3 42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.*c| COUNTS : 4 0
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 -1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 -3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 -4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 -5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 -42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 4 42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.*c| COUNTS : 5 0
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 -1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 -3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 -4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 -5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 -42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 5 42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.*c| COUNTS : 42 0
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 -1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 -3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 -4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 -5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 -42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.*c| COUNTS : 42 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.0c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.0c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.0c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.0c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.1c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.1c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.1c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.1c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.3c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.3c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.3c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.3c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.4c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.4c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.4c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.4c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.5c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.5c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.5c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.5c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0*.42c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0*.42c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0*.42c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0*.42c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%03c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : 0
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : -1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : 1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : -3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : -4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : 4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : -5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : 5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : -42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.*c| COUNT : 42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.0c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.1c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.3c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.4c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.5c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%03.42c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%04c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : 0
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : -1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : 1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : -3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : 3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : -4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : -5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : 5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : -42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.*c| COUNT : 42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.0c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.1c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.3c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.4c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.5c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%04.42c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%05c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : 0
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : -1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : 1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : -3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : 3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : -4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : 4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : -5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : -42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.*c| COUNT : 42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.0c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.1c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.3c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.4c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.5c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%05.42c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%042c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : 0
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : -1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : 1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : -3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : 3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : -4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : 4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : -5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : 5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : -42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.*c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.0c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.1c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.3c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.4c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.5c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%042.42c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.*c| COUNTS : 3 0
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.*c| COUNTS : 3 -1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.*c| COUNTS : 3 1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.*c| COUNTS : 3 -3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.*c| COUNTS : 3 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.*c| COUNTS : 3 -4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.*c| COUNTS : 3 4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.*c| COUNTS : 3 -5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.*c| COUNTS : 3 5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.*c| COUNTS : 3 -42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.*c| COUNTS : 3 42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.*c| COUNTS : 4 0
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.*c| COUNTS : 4 -1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.*c| COUNTS : 4 1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.*c| COUNTS : 4 -3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.*c| COUNTS : 4 3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.*c| COUNTS : 4 -4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.*c| COUNTS : 4 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.*c| COUNTS : 4 -5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.*c| COUNTS : 4 5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.*c| COUNTS : 4 -42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.*c| COUNTS : 4 42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.*c| COUNTS : 5 0
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.*c| COUNTS : 5 -1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.*c| COUNTS : 5 1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.*c| COUNTS : 5 -3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.*c| COUNTS : 5 3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.*c| COUNTS : 5 -4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.*c| COUNTS : 5 4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.*c| COUNTS : 5 -5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.*c| COUNTS : 5 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.*c| COUNTS : 5 -42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.*c| COUNTS : 5 42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.*c| COUNTS : 42 0
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.*c| COUNTS : 42 -1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.*c| COUNTS : 42 1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.*c| COUNTS : 42 -3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.*c| COUNTS : 42 3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.*c| COUNTS : 42 -4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.*c| COUNTS : 42 4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.*c| COUNTS : 42 -5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.*c| COUNTS : 42 5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.*c| COUNTS : 42 -42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.*c| COUNTS : 42 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.0c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.0c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.0c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.0c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.1c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.1c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.1c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.1c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.3c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.3c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.3c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.3c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.4c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.4c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.4c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.4c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.5c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.5c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.5c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.5c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 *.42c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 *.42c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 *.42c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 *.42c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 3c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.*c| COUNT : 0
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.*c| COUNT : -1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.*c| COUNT : 1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.*c| COUNT : -3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.*c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.*c| COUNT : -4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.*c| COUNT : 4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.*c| COUNT : -5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.*c| COUNT : 5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.*c| COUNT : -42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.*c| COUNT : 42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.0c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.1c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.3c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.4c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.5c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 3.42c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0 4c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.*c| COUNT : 0
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.*c| COUNT : -1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.*c| COUNT : 1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.*c| COUNT : -3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.*c| COUNT : 3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.*c| COUNT : -4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.*c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.*c| COUNT : -5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.*c| COUNT : 5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.*c| COUNT : -42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.*c| COUNT : 42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.0c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.1c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.3c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.4c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.5c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 4.42c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0 5c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.*c| COUNT : 0
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.*c| COUNT : -1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.*c| COUNT : 1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.*c| COUNT : -3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.*c| COUNT : 3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.*c| COUNT : -4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.*c| COUNT : 4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.*c| COUNT : -5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.*c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.*c| COUNT : -42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.*c| COUNT : 42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.0c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.1c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.3c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.4c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.5c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 5.42c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0 42c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.*c| COUNT : 0
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.*c| COUNT : -1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.*c| COUNT : 1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.*c| COUNT : -3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.*c| COUNT : 3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.*c| COUNT : -4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.*c| COUNT : 4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.*c| COUNT : -5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.*c| COUNT : 5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.*c| COUNT : -42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.*c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.0c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.1c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.3c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.4c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.5c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0 42.42c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.*c| COUNTS : 3 0
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.*c| COUNTS : 3 -1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.*c| COUNTS : 3 1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.*c| COUNTS : 3 -3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.*c| COUNTS : 3 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.*c| COUNTS : 3 -4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.*c| COUNTS : 3 4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.*c| COUNTS : 3 -5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.*c| COUNTS : 3 5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.*c| COUNTS : 3 -42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.*c| COUNTS : 3 42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.*c| COUNTS : 4 0
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.*c| COUNTS : 4 -1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.*c| COUNTS : 4 1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.*c| COUNTS : 4 -3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.*c| COUNTS : 4 3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.*c| COUNTS : 4 -4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.*c| COUNTS : 4 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.*c| COUNTS : 4 -5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.*c| COUNTS : 4 5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.*c| COUNTS : 4 -42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.*c| COUNTS : 4 42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.*c| COUNTS : 5 0
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.*c| COUNTS : 5 -1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.*c| COUNTS : 5 1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.*c| COUNTS : 5 -3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.*c| COUNTS : 5 3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.*c| COUNTS : 5 -4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.*c| COUNTS : 5 4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.*c| COUNTS : 5 -5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.*c| COUNTS : 5 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.*c| COUNTS : 5 -42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.*c| COUNTS : 5 42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.*c| COUNTS : 42 0
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.*c| COUNTS : 42 -1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.*c| COUNTS : 42 1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.*c| COUNTS : 42 -3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.*c| COUNTS : 42 3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.*c| COUNTS : 42 -4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.*c| COUNTS : 42 4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.*c| COUNTS : 42 -5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.*c| COUNTS : 42 5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.*c| COUNTS : 42 -42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.*c| COUNTS : 42 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.0c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.0c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.0c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.0c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.1c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.1c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.1c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.1c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.3c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.3c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.3c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.3c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.4c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.4c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.4c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.4c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.5c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.5c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.5c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.5c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+*.42c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+*.42c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+*.42c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+*.42c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+3c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.*c| COUNT : 0
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.*c| COUNT : -1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.*c| COUNT : 1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.*c| COUNT : -3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.*c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.*c| COUNT : -4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.*c| COUNT : 4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.*c| COUNT : -5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.*c| COUNT : 5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.*c| COUNT : -42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.*c| COUNT : 42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.0c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.1c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.3c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.4c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.5c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+3.42c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%0+4c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.*c| COUNT : 0
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.*c| COUNT : -1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.*c| COUNT : 1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.*c| COUNT : -3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.*c| COUNT : 3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.*c| COUNT : -4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.*c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.*c| COUNT : -5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.*c| COUNT : 5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.*c| COUNT : -42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.*c| COUNT : 42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.0c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.1c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.3c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.4c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.5c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+4.42c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%0+5c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.*c| COUNT : 0
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.*c| COUNT : -1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.*c| COUNT : 1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.*c| COUNT : -3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.*c| COUNT : 3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.*c| COUNT : -4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.*c| COUNT : 4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.*c| COUNT : -5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.*c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.*c| COUNT : -42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.*c| COUNT : 42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.0c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.1c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.3c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.4c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.5c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+5.42c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0+42c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.*c| COUNT : 0
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.*c| COUNT : -1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.*c| COUNT : 1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.*c| COUNT : -3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.*c| COUNT : 3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.*c| COUNT : -4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.*c| COUNT : 4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.*c| COUNT : -5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.*c| COUNT : 5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.*c| COUNT : -42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.*c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.0c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.1c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.3c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.4c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.5c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0+42.42c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.*c| COUNTS : 3 0
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.*c| COUNTS : 3 -1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.*c| COUNTS : 3 1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.*c| COUNTS : 3 -3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.*c| COUNTS : 3 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.*c| COUNTS : 3 -4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.*c| COUNTS : 3 4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.*c| COUNTS : 3 -5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.*c| COUNTS : 3 5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.*c| COUNTS : 3 -42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.*c| COUNTS : 3 42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.*c| COUNTS : 4 0
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.*c| COUNTS : 4 -1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.*c| COUNTS : 4 1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.*c| COUNTS : 4 -3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.*c| COUNTS : 4 3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.*c| COUNTS : 4 -4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.*c| COUNTS : 4 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.*c| COUNTS : 4 -5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.*c| COUNTS : 4 5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.*c| COUNTS : 4 -42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.*c| COUNTS : 4 42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.*c| COUNTS : 5 0
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.*c| COUNTS : 5 -1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.*c| COUNTS : 5 1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.*c| COUNTS : 5 -3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.*c| COUNTS : 5 3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.*c| COUNTS : 5 -4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.*c| COUNTS : 5 4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.*c| COUNTS : 5 -5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.*c| COUNTS : 5 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.*c| COUNTS : 5 -42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.*c| COUNTS : 5 42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.*c| COUNTS : 42 0
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.*c| COUNTS : 42 -1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.*c| COUNTS : 42 1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.*c| COUNTS : 42 -3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.*c| COUNTS : 42 3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.*c| COUNTS : 42 -4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.*c| COUNTS : 42 4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.*c| COUNTS : 42 -5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.*c| COUNTS : 42 5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.*c| COUNTS : 42 -42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.*c| COUNTS : 42 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.0c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.0c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.0c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.0c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.1c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.1c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.1c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.1c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.3c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.3c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.3c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.3c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.4c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.4c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.4c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.4c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.5c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.5c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.5c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.5c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%00*.42c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%00*.42c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%00*.42c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%00*.42c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%003c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.*c| COUNT : 0
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.*c| COUNT : -1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.*c| COUNT : 1
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.*c| COUNT : -3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.*c| COUNT : 3
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.*c| COUNT : -4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.*c| COUNT : 4
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.*c| COUNT : -5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.*c| COUNT : 5
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.*c| COUNT : -42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.*c| COUNT : 42
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.0c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.1c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.3c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.4c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.5c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%003.42c|
+test : |  a|
+rst = 5
+ref. : |00a|
+rst = 5
+
+DIFF : |%004c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.*c| COUNT : 0
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.*c| COUNT : -1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.*c| COUNT : 1
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.*c| COUNT : -3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.*c| COUNT : 3
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.*c| COUNT : -4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.*c| COUNT : 4
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.*c| COUNT : -5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.*c| COUNT : 5
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.*c| COUNT : -42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.*c| COUNT : 42
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.0c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.1c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.3c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.4c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.5c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%004.42c|
+test : |   a|
+rst = 6
+ref. : |000a|
+rst = 6
+
+DIFF : |%005c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.*c| COUNT : 0
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.*c| COUNT : -1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.*c| COUNT : 1
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.*c| COUNT : -3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.*c| COUNT : 3
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.*c| COUNT : -4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.*c| COUNT : 4
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.*c| COUNT : -5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.*c| COUNT : 5
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.*c| COUNT : -42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.*c| COUNT : 42
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.0c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.1c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.3c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.4c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.5c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%005.42c|
+test : |    a|
+rst = 7
+ref. : |0000a|
+rst = 7
+
+DIFF : |%0042c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.*c| COUNT : 0
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.*c| COUNT : -1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.*c| COUNT : 1
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.*c| COUNT : -3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.*c| COUNT : 3
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.*c| COUNT : -4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.*c| COUNT : 4
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.*c| COUNT : -5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.*c| COUNT : 5
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.*c| COUNT : -42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.*c| COUNT : 42
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.0c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.1c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.3c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.4c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.5c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
+DIFF : |%0042.42c|
+test : |                                         a|
+rst = 44
+ref. : |00000000000000000000000000000000000000000a|
+rst = 44
+
