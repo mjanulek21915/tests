@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-static void			ft_pf_write_hex_a_2(t_type *type, int *rst)
+static void				ft_pf_write_hex_a_2(t_type *type, int *rst)
 {
 	type->len = ft_pf_write_nlen(type->temp, 16);
 	type->prec_len = type->precision - type->len;
@@ -35,19 +35,19 @@ static void			ft_pf_write_hex_a_2(t_type *type, int *rst)
 }
 
 void					ft_pf_write_hex_a(va_list vl, t_type *type, int *rst)
-{	
+{
 	if (type->type == 'X')
 	{
 		if (type->is_left || type->is_precision == 1 || type->is_width)
 			type->padding = ' ';
-		if (type->is_width && !type->is_precision && type->is_zero == 1
+		if (type->is_width && !type->is_precision && type->is_zero
 		&& !type->is_left)
-		{	
+		{
 			type->precision = type->width;
 			type->is_precision = 1;
 		}
 		else if (type->is_width && type->width > 0 && type->is_precision
-		&& type->is_zero == 1 && type->precision < 0  && !type->is_left)
+		&& type->is_zero && type->precision < 0  && !type->is_left)
 			type->precision = type->width;
 		if (type->width < 0)
 		{

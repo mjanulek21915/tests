@@ -14,16 +14,16 @@
 
 static void				ft_pf_write_str_2(t_type *type, int *rst)
 {
-		if (type->is_left)
-		{
-			ft_pf_write_n(type->ptr_temp, type->len, rst);
-			ft_pf_write_padding(type->pad_len, ' ', rst);
-		}
-		else
-		{
-			ft_pf_write_padding(type->pad_len, ' ', rst);
-			ft_pf_write_n(type->ptr_temp, type->len, rst);
-		}
+	if (type->is_left)
+	{
+		ft_pf_write_n(type->ptr_temp, type->len, rst);
+		ft_pf_write_padding(type->pad_len, ' ', rst);
+	}
+	else
+	{
+		ft_pf_write_padding(type->pad_len, ' ', rst);
+		ft_pf_write_n(type->ptr_temp, type->len, rst);
+	}
 }
 
 void					ft_pf_write_str(va_list vl, t_type *type, int *rst)

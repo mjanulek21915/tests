@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
 void					ft_pf_write_n(char *str, int n, int *rst)
 {
 	if (!str)

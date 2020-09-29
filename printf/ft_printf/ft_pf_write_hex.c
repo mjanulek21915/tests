@@ -35,7 +35,7 @@ static void				ft_pf_write_hex_2(t_type *type, int *rst)
 }
 
 void					ft_pf_write_hex(va_list vl, t_type *type, int *rst)
-{	
+{
 	if (type->type == 'x')
 	{
 		if (type->is_left || type->is_precision == 1 || type->is_width)
