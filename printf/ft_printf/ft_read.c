@@ -12,22 +12,10 @@
 
 #include "ft_printf.h"
 
-static void				ft_read_get_numbers(t_type *type, char **str, va_list vl)
+static void				ft_read_get_numbers_1(t_type *type, char **str, va_list vl)
 {
 	int temp;
 
-	temp = ft_read_atoi(str);
-	if (temp > -2)
-	{
-		type->is_width = 1;
-		if (temp == -1)
-		{
-			type->width_star = 1;
-			type->width = va_arg(vl, int);
-		}
-		else
-			type->width = temp;
-	}
 	if (**str == '.')
 	{
 		(*str)++;
@@ -44,6 +32,25 @@ static void				ft_read_get_numbers(t_type *type, char **str, va_list vl)
 				type->precision = temp;
 		}
 	}
+}
+
+static void				ft_read_get_numbers(t_type *type, char **str, va_list vl)
+{
+	int temp;
+
+	temp = ft_read_atoi(str);
+	if (temp > -2)
+	{
+		type->is_width = 1;
+		if (temp == -1)
+		{
+			type->width_star = 1;
+			type->width = va_arg(vl, int);
+		}
+		else
+			type->width = temp;
+	}
+ft_read_get_numbers_1(type, str, vl);
 }
 
 static void				ft_read_get_flags(t_type *type, char **str)
@@ -109,4 +116,3 @@ void						ft_read(char **str, va_list vl, int *rst)
 	*str = temp;
 	ft_write(&type, vl, rst);
 }
-
