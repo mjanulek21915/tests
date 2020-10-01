@@ -45,14 +45,14 @@ void					ft_pf_write_int(va_list vl, t_type *type, int *rst)
 	if (type->type == 'd' || type->type == 'i')
 	{
 		type->temp = (int)va_arg(vl, int);
-		if (type->is_left || type->is_precision || type->is_width)
-			type->padding = ' ';
 		if (type->is_precision && type->precision == 0 && type->temp == 0)
 			return ;
+		if (type->is_left || type->is_precision || type->is_width)
+			type->padding = ' ';
 		if (type->is_width && !type->is_precision
 		&& type->is_zero && !type->is_left)
 		{
-			type->precision = type->width;
+			type->precision = type->width - 1;
 			type->is_precision = 1;
 		}
 		else if (type->is_width && type->width > 0 && type->is_precision
