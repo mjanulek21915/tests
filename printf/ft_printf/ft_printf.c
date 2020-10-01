@@ -18,6 +18,8 @@ int					ft_printf(const char *str, ...)
 	char	*temp;
 	int		rst;
 
+	if (!str)
+		return (0);
 	temp = (char *)str;
 	if (!temp)
 		return (0);
