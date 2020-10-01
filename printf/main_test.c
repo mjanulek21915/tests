@@ -4,7 +4,9 @@ int main()
 {
 	int rst_test;
 	int rst_ref;
+	// "%8lc" with arg: (char)251
 	char str[110]="cesi";
-	printf("test : %c\n", 'a');
+	ft_printf(NULL, (char)251);
+	ft_printf("%8lc", (char)251);
 
 }

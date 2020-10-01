@@ -1,1 +1,1 @@
-gcc -I ft_printf main_test.c ft_printf/libftprintf.a -w
+gcc -I ft_printf main_test.c ft_printf/libftprintf.a -w -fsanitize=address
