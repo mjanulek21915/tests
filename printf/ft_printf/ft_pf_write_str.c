@@ -30,7 +30,7 @@ void					ft_pf_write_str(va_list vl, t_type *type, int *rst)
 {
 	if (type->type == 's')
 	{
-		type->paddng = ' ';
+		type->padding = ' ';
 		if (type->width < 0)
 		{
 			type->width = -type->width;
