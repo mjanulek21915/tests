@@ -62,8 +62,6 @@ static void				ft_pf_write_ptr_1(t_type *type)
 		type->is_precision = 1;
 		type->precision = type->width - 2;
 	}
-	if (type->is_left)
-		type->precision = 0;
 }
 
 void					ft_pf_write_ptr(va_list vl, t_type *type, int *rst)

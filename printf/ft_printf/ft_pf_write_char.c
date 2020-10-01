@@ -33,11 +33,11 @@ void					ft_pf_write_char(va_list vl, t_type *type, int *rst)
 		if (type->is_left)
 		{
 			ft_pf_putchar(&temp, rst);
-			ft_pf_write_padding(p_len, ' ', rst);
+			ft_pf_write_padding(p_len, type->padding, rst);
 		}
 		else
 		{
-			ft_pf_write_padding(p_len, ' ', rst);
+			ft_pf_write_padding(p_len, type->padding, rst);
 			ft_pf_putchar(&temp, rst);
 		}
 	}

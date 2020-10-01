@@ -35,8 +35,8 @@ void					ft_pf_write_str(va_list vl, t_type *type, int *rst)
 			type->width = -type->width;
 			type->is_left = 1;
 		}
-		if (type->is_zero && !type->is_left)
-			type->padding = '0';
+		// if (type->is_zero && !type->is_left)
+		// 	type->padding = '0';
 		type->ptr_temp = va_arg(vl, char *);
 		if (!type->ptr_temp)
 			return ;
