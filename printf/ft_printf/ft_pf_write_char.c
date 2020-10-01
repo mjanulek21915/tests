@@ -25,6 +25,7 @@ static void				ft_pf_write_char2(char temp, t_type *type, int *rst)
 		ft_pf_putchar(&temp, rst);
 	}
 }
+
 void					ft_pf_write_char(va_list vl, t_type *type, int *rst)
 {
 	char	temp;
