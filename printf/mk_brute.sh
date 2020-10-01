@@ -1,7 +1,7 @@
 ./mk.sh
 
 random=0
-multiple_flags=1
+multiple_flags=0
 precision=0
 show_all=0
 
