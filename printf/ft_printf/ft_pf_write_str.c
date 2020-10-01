@@ -17,11 +17,11 @@ static void				ft_pf_write_str_2(t_type *type, int *rst)
 	if (type->is_left)
 	{
 		ft_pf_write_n(type->ptr_temp, type->len, rst);
-		ft_pf_write_padding(type->pad_len, ' ', rst);
+		ft_pf_write_padding(type->pad_len, type->padding, rst);
 	}
 	else
 	{
-		ft_pf_write_padding(type->pad_len, ' ', rst);
+		ft_pf_write_padding(type->pad_len, type->padding, rst);
 		ft_pf_write_n(type->ptr_temp, type->len, rst);
 	}
 }
@@ -35,6 +35,8 @@ void					ft_pf_write_str(va_list vl, t_type *type, int *rst)
 			type->width = -type->width;
 			type->is_left = 1;
 		}
+		if (type->is_zero && !type->is_left)
+			type->padding = '0';
 		type->ptr_temp = va_arg(vl, char *);
 		if (!type->ptr_temp)
 			return ;

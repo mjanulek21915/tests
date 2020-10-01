@@ -24,6 +24,8 @@ void					ft_pf_write_char(va_list vl, t_type *type, int *rst)
 			type->width = -type->width;
 			type->is_left = 1;
 		}
+		if (type->is_zero && !type->is_left)
+			type->padding = '0';
 		p_len = type->width - 1;
 		if (p_len < 0)
 			p_len = 0;

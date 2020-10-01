@@ -1,1 +1,1 @@
-gcc -I . ft*.c main_test.c read/*.c write/*.c -w
+gcc -I ft_printf main_test.c ft_printf/libftprintf.a -w
