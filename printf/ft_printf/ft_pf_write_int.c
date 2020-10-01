@@ -35,7 +35,7 @@ static void				ft_pf_write_int_2(t_type *type, int *rst)
 		ft_pf_write_padding(type->pad_len, type->padding, rst);
 		if (type->sign)
 			ft_pf_putchar(&(type->sign), rst);
-		ft_pf_write_padding(type->prec_len, '0', rst);
+		ft_pf_write_padding(type->prec_len, '0i', rst);
 		ft_pf_write_put_base(type->temp, BASE_10, rst);
 	}
 }
@@ -44,8 +44,11 @@ void					ft_pf_write_int(va_list vl, t_type *type, int *rst)
 {
 	if (type->type == 'd' || type->type == 'i')
 	{
+		type->temp = (int)va_arg(vl, int);
 		if (type->is_left || type->is_precision || type->is_width)
 			type->padding = ' ';
+		if (type->is_precision && type->temp == 0)
+			return ;
 		if (type->is_width && !type->is_precision
 		&& type->is_zero && !type->is_left)
 		{
@@ -60,7 +63,6 @@ void					ft_pf_write_int(va_list vl, t_type *type, int *rst)
 			type->width = -type->width;
 			type->is_left = 1;
 		}
-		type->temp = (int)va_arg(vl, int);
 		ft_pf_write_int_2(type, rst);
 	}
 }
