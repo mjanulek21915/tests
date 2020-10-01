@@ -35,7 +35,7 @@ static void				ft_pf_write_int_2(t_type *type, int *rst)
 		ft_pf_write_padding(type->pad_len, type->padding, rst);
 		if (type->sign)
 			ft_pf_putchar(&(type->sign), rst);
-		ft_pf_write_padding(type->prec_len, '0i', rst);
+		ft_pf_write_padding(type->prec_len, '0', rst);
 		ft_pf_write_put_base(type->temp, BASE_10, rst);
 	}
 }
