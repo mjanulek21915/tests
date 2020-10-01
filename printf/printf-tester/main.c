@@ -48,7 +48,7 @@ int main(void)
 	printf("p25 %.50x\n", 100);
 	printf("p26 %.1x\n", 100);
 	printf("p27 %.3x\n", 100);
-	printf("p28 %.0x\n", 0);
+	printf("p28 %.0X\n", 0);
 	printf("p29 %.3u\n", 100);
 	printf("p30 %.0u\n", 100);
 	printf("p31 %.4u\n", 100);

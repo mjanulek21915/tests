@@ -38,6 +38,9 @@ void					ft_pf_write_hex_a(va_list vl, t_type *type, int *rst)
 {
 	if (type->type == 'X')
 	{
+		type->temp = (unsigned int)va_arg(vl, unsigned int);
+		if (type->is_precision && type->precision == 0 && type->temp == 0)
+			return ;
 		if (type->is_left || type->is_precision == 1 || type->is_width)
 			type->padding = ' ';
 		if (type->is_width && !type->is_precision && type->is_zero
@@ -54,7 +57,6 @@ void					ft_pf_write_hex_a(va_list vl, t_type *type, int *rst)
 			type->width = -type->width;
 			type->is_left = 1;
 		}
-		type->temp = (unsigned int)va_arg(vl, unsigned int);
 		ft_pf_write_hex_a_2(type, rst);
 	}
 }
