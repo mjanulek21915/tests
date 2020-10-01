@@ -14,6 +14,11 @@
 
 static void				ft_pf_write_str_2(t_type *type, int *rst)
 {
+	if (!type->temp)
+	{
+		ft_pf_write_n("(null)", type->len, rst);
+		return ;
+	}
 	if (type->is_left)
 	{
 		ft_pf_write_n(type->ptr_temp, type->len, rst);
