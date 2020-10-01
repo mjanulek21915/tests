@@ -14,11 +14,6 @@
 
 static void				ft_pf_write_str_2(t_type *type, int *rst)
 {
-	if (!type->temp)
-	{
-		ft_pf_write_n("(null)", type->len, rst);
-		return ;
-	}
 	if (type->is_left)
 	{
 		ft_pf_write_n(type->ptr_temp, type->len, rst);
@@ -45,7 +40,7 @@ void					ft_pf_write_str(va_list vl, t_type *type, int *rst)
 			type->padding = '0';
 		type->ptr_temp = va_arg(vl, char *);
 		if (!type->ptr_temp)
-			return ;
+			type->ptr_temp = "(null)";
 		type->len = ft_pf_strlen(type->ptr_temp);
 		if (type->is_precision)
 			if (type->precision >= 0 && type->precision < type->len)
