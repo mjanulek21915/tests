@@ -16,6 +16,7 @@ void					ft_pf_write_percent(t_type *type, int *rst)
 {
 	if (type->type == '%')
 	{
+		type->padding = ' ';
 		if (type->is_width)
 		{
 			if (type->width < 0)
@@ -25,8 +26,6 @@ void					ft_pf_write_percent(t_type *type, int *rst)
 			}
 			type->pad_len = type->width - 1;
 		}
-		// if (type->is_zero && !type->is_left)
-		// 	type->padding = ' ';
 		if (type->is_left)
 		{
 			ft_pf_putchar("%", rst);
