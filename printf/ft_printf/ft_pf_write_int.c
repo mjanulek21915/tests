@@ -57,7 +57,7 @@ void					ft_pf_write_int(va_list vl, t_type *type, int *rst)
 		}
 		else if (type->is_width && type->width > 0 && type->is_precision
 		&& type->is_zero && type->precision < 0 && !type->is_left)
-			type->precision = type->width - 1;
+			type->precision = type->width;
 		if (type->width < 0)
 		{
 			type->width = -type->width;
