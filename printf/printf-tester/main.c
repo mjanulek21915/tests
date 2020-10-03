@@ -94,7 +94,7 @@ int main(void)
     printf("ret = %d\n", printf("%%p::[%010.1d]\n", -8473));
     printf("ret = %d\n", printf("%%p::[%01.50d]\n", -8473));
     printf("ret = %d\n", printf("%%p::[%1.50d]\n", -8473));
-    printf("ret = %d\n", printf("%%p::[%0100.50d]\n", -8473));
+    printf("ret = %d\n", printf("%%p::[%010.10d]\n", -8473));
     printf("ret = %d\n", printf("%%p::[%010d]\n", 8473));
     printf("ret = %d\n", printf("%%p::[%10d]\n", 8473));
     printf("ret = %d\n", printf("%%p::[%.5d]\n", 8473));
@@ -102,7 +102,7 @@ int main(void)
     printf("ret = %d\n", printf("%%p::[%010.1d]\n", 8473));
     printf("ret = %d\n", printf("%%p::[%01.50d]\n", 8473));
     printf("ret = %d\n", printf("%%p::[%1.50d]\n", 8473));
-    printf("ret = %d\n", printf("%%p::[%0100.50d]\n", 8473));
+    printf("ret = %d\n", printf("%%p::[%010.10d]\n", 8473));
 	printf("%c", 'a');
 	printf("%10c", 't');
 	printf("%1c", 'y');
