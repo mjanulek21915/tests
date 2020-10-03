@@ -8,10 +8,10 @@ echo 'Please enter a path for libftprintf.a'
 	rm ft.c
 	printf "${RED}Compiling printf main...${NC}\n"
 	gcc ${PRINTFA} newmain.c 2> /dev/null
-	./a.out > printf.txt
+	./a.out > printf.txt&&
 	echo "${RED}Compiling ft_printf main...${NC}\n"
 	gcc ${PRINTFA} ft_printf.c 2> /dev/null
-	./a.out > ft_printf.txt
+	./a.out > ft_printf.txt&&
 	rm a.out
 	diff printf.txt ft_printf.txt > printf.diff
 	cat -e printf.diff
