@@ -87,7 +87,7 @@ int main(void)
     ft_printf("ret = %d\n", ft_printf("%%p:5:[%010.1d]\n", -8473));
     ft_printf("ret = %d\n", ft_printf("%%p:6:[%01.50d]\n", -8473));
     ft_printf("ret = %d\n", ft_printf("%%p:7:[%1.50d]\n", -8473));
-    ft_printf("ret = %d\n", ft_printf("%%p:[012.12d], -8473:[%012.12d]\n", -8473));
+    ft_printf("ret = %d\n", ft_printf("%%p:[012.12d],-8473:[%020.12d]\n", -8473));
     ft_printf("ret = %d\n", ft_printf("%%p:9:[%010d]\n", 8473));
     ft_printf("ret = %d\n", ft_printf("%%p:10:[%10d]\n", 8473));
     ft_printf("ret = %d\n", ft_printf("%%p:11:[%.5d]\n", 8473));
@@ -95,7 +95,7 @@ int main(void)
     ft_printf("ret = %d\n", ft_printf("%%p:13:[%010.1d]\n", 8473));
     ft_printf("ret = %d\n", ft_printf("%%p:14:[%01.50d]\n", 8473));
     ft_printf("ret = %d\n", ft_printf("%%p:15:[%1.50d]\n", 8473));
-    ft_printf("ret = %d\n", ft_printf("%%p:[012.12d], 8473:[%012.12d]\n", 8473));
+    ft_printf("ret = %d\n", ft_printf("%%p:[012.12d], 8473:[%020.12d]\n", 8473));
 	ft_printf("%c\n", 'a');
 	ft_printf("%10c\n", 't');
 	ft_printf("%1c\n", 'y');
