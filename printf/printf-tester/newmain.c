@@ -87,7 +87,7 @@ int main(void)
     printf("ret = %d\n", printf("%%p:5:[%010.1d]\n", -8473));
     printf("ret = %d\n", printf("%%p:6:[%01.50d]\n", -8473));
     printf("ret = %d\n", printf("%%p:7:[%1.50d]\n", -8473));
-    printf("ret = %d\n", printf("%%p:[012.12d], -8473:[%012.12d]\n", -8473));
+    printf("ret = %d\n", printf("%%p:[012.12d],-8473:[%020.12d]\n", -8473));
     printf("ret = %d\n", printf("%%p:9:[%010d]\n", 8473));
     printf("ret = %d\n", printf("%%p:10:[%10d]\n", 8473));
     printf("ret = %d\n", printf("%%p:11:[%.5d]\n", 8473));
@@ -95,7 +95,7 @@ int main(void)
     printf("ret = %d\n", printf("%%p:13:[%010.1d]\n", 8473));
     printf("ret = %d\n", printf("%%p:14:[%01.50d]\n", 8473));
     printf("ret = %d\n", printf("%%p:15:[%1.50d]\n", 8473));
-    printf("ret = %d\n", printf("%%p:[012.12d], 8473:[%012.12d]\n", 8473));
+    printf("ret = %d\n", printf("%%p:[012.12d], 8473:[%020.12d]\n", 8473));
 	printf("%c\n", 'a');
 	printf("%10c\n", 't');
 	printf("%1c\n", 'y');
