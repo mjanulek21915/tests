@@ -15,7 +15,7 @@
 static void				ft_pf_write_int_2(t_type *type, int *rst)
 {
 	ft_pf_write_get_sign(&(type->temp), type);
-	type->len = ft_pf_write_nlen(type->temp, 10)
+	type->len = ft_pf_write_nlen(type->temp, 10);
 	type->prec_len = type->precision - type->len;
 	type->prec_len = (type->prec_len > 0) ? type->prec_len : 0;
 	type->pad_len = type->width - type->len - type->prec_len;
