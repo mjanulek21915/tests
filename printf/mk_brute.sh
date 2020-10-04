@@ -33,6 +33,7 @@ then
 		fi
 		echo "LOG_DIFF conv : ${conv}">$log_diff
 		echo "LOG_SEGFAULT conv : ${conv}">$log_segfault
+		echo "testing random flags $conv"
 		for text in "${text_list[@]}"
 		do
 			for element_a in "${whole_list[@]}"
@@ -100,6 +101,7 @@ then
 		fi
 		echo "LOG_DIFF conv : ${conv}">$log_diff
 		echo "LOG_SEGFAULT conv : ${conv}">$log_segfault
+		echo "testing precision $conv"
 		for text in "${text_list[@]}"
 		do
 			for flag_a in "${flag_list[@]}"
@@ -111,7 +113,6 @@ then
 						for prec in "${prec_list[@]}"
 						do
 							fmt="${text}%$flag_a$flag_b$width$prec${conv}${text}"
-							echo "SHELL : ${fmt//"r"}"
 							if [[ ( ( $width == '*' ) && ( $prec != '.*' ) ) || ( ( $width != '*' ) && ( $prec == '.*' ) ) ]]
 							then
 								for count in ${count_list[@]}
@@ -242,6 +243,7 @@ then
 		fi
 		echo "LOG_DIFF conv : ${conv}">$log_diff
 		echo "LOG_SEGFAULT conv : ${conv}">$log_segfault
+		echo "testing multiple flags : $conv"
 		for text in "${text_list[@]}"
 		do
 			for flag_a in "${flag_list[@]}"
@@ -257,7 +259,6 @@ then
 								for prec in "${prec_list[@]}"
 								do
 									fmt="${text}%$flag_a$flag_b$flag_c$flag_d$width$prec${conv}${text}"
-									echo "SHELL : ${fmt//"r"}"
 									if [[ ( ( $width == '*' ) && ( $prec != '.*' ) ) || ( ( $width != '*' ) && ( $prec == '.*' ) ) ]]
 									then
 										for count in ${count_list[@]}
@@ -371,3 +372,4 @@ then
 	done
 		IFS=$old_ifs
 fi
+echo "time : $SECONDS"
