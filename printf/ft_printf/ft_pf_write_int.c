@@ -21,6 +21,8 @@ static void				ft_pf_write_int_2(t_type *type, int *rst)
 	type->pad_len = type->width - type->len - type->prec_len;
 	if (type->pad_len < 0)
 		type->pad_len = 0;
+	if (type->temp < 0)
+		type->precision = type->precision + 1;
 	if (type->is_left)
 	{
 		if (type->sign)
