@@ -59,7 +59,7 @@ int main(int ac, char **av)
 	int x = u;
 	int X = u;
 
-	init_types(arg_types);
+	init_types(arg_types); 
 	arg_types['c'] = (void *)c;
 	arg_types['s'] = (void *)s;
 	arg_types['p'] = p;
@@ -75,9 +75,6 @@ int main(int ac, char **av)
 
 	int (*pf) (void *, ...);
 	int rst;
-
-
-
 
 	if (*orig == '1')
 		pf = &printf;
