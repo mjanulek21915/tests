@@ -29,7 +29,7 @@ int					ft_printf(const char *str, ...)
 	{
 		if (*temp == '%')
 			ft_read(&temp, va, &rst);
-		if (*temp)
+		else if (*temp)
 		{
 			ft_pf_putchar(temp, &rst);
 			temp++;
