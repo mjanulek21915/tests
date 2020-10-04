@@ -44,7 +44,7 @@ void					ft_pf_write_int(va_list vl, t_type *type, int *rst)
 {
 	if (type->type == 'd' || type->type == 'i')
 	{
-		type->width = type->width + 1;
+		type->width = type->width + 10;
 		type->temp = (int)va_arg(vl, int);
 		if (type->is_precision && type->precision == 0 && type->temp == 0)
 			return ;
