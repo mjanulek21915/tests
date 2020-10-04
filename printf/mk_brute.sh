@@ -259,7 +259,7 @@ then
 								for prec in "${prec_list[@]}"
 								do
 									fmt="${text}%$flag_a$flag_b$flag_c$flag_d$width$prec${conv}${text}"
-									echo "$fmt"
+									echo "${fmt//"r}"
 									if [[ ( ( $width == '*' ) && ( $prec != '.*' ) ) || ( ( $width != '*' ) && ( $prec == '.*' ) ) ]]
 									then
 										for count in ${count_list[@]}
