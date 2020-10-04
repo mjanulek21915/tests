@@ -3,7 +3,10 @@
 
 int main()
 {
-	printf("%+x\n", -42);
-	printf("%+X\n", -42);
-	printf("%+x\n", -42);
+	printf("pf : %+x\n", -42);
+	printf("pf : %+X\n", -42);
+	printf("pf : %+x\n", -42);
+	printf("ft : %+x\n", -42);
+	printf("ft : %+X\n", -42);
+	printf("ft : %+x\n", -42);
 }
