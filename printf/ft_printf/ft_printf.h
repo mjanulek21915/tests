@@ -65,7 +65,8 @@ int						ft_pf_write_nlen(unsigned long long n, int base);
 void					ft_pf_write_n(char *str, int n, int *rst);
 void					ft_pf_write_uint(va_list vl, t_type *type, int *rst);
 void					ft_pf_write_str(va_list vl, t_type *type, int *rst);
-void					ft_pf_write_put_base(unsigned long long n, char *base, int *rst);
+void					ft_pf_write_put_base(unsigned long long n,
+char *base, int *rst);
 void					ft_pf_write_ptr(va_list vl, t_type *type, int *rst);
 void					ft_pf_write_percent(t_type *type, int *rst);
 void					ft_pf_write_padding(int n, char c, int *rst);

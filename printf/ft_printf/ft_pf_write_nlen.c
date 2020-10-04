@@ -18,7 +18,7 @@ int					ft_pf_write_nlen(unsigned long long n, int base)
 
 	i = 0;
 	if (n < 0)
-	n = -n;
+		n = -n;
 	if (n == 0)
 		return (1);
 	while (n)

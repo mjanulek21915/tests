@@ -12,9 +12,10 @@
 
 #include "ft_printf.h"
 
-static void			ft_pf_pb_rec(unsigned long long n, char *base, unsigned long long len, int *rst)
+static void			ft_pf_pb_rec(unsigned long long n,
+char *base, unsigned long long len, int *rst)
 {
-	unsigned long long	temp;
+	unsigned long long				temp;
 
 	temp = n % len;
 	if (n > len - 1)
@@ -22,7 +23,8 @@ static void			ft_pf_pb_rec(unsigned long long n, char *base, unsigned long long 
 	ft_pf_putchar(&(base[temp]), rst);
 }
 
-void				ft_pf_write_put_base(unsigned long long n, char *base, int *rst)
+void				ft_pf_write_put_base(unsigned long long n,
+char *base, int *rst)
 {
 	unsigned long long				len_base;
 

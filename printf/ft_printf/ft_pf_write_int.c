@@ -12,17 +12,8 @@
 
 #include "ft_printf.h"
 
-static void				ft_pf_write_int_2(t_type *type, int *rst)
+static void				ft_pf_write_int_3(t_type *type, int *rst)
 {
-	
-	if ((type->temp < 0 && !type->is_zero) || (type->temp < 0 && type->is_special))
-		type->precision = type->precision + 1;
-	type->len = ft_pf_write_get_sign(&(type->temp), type) + ft_pf_write_nlen(type->temp, 10);
-	type->prec_len = type->precision - type->len;
-	type->prec_len = (type->prec_len > 0) ? type->prec_len : 0;
-	type->pad_len = type->width - type->len - type->prec_len;
-	if (type->pad_len < 0)
-		type->pad_len = 0;
 	if (type->is_left)
 	{
 		if (type->sign)
@@ -40,6 +31,21 @@ static void				ft_pf_write_int_2(t_type *type, int *rst)
 		ft_pf_write_padding(type->prec_len, '0', rst);
 		ft_pf_write_put_base(type->temp, BASE_10, rst);
 	}
+}
+
+static void				ft_pf_write_int_2(t_type *type, int *rst)
+{
+	if ((type->temp < 0 && !type->is_zero) ||
+	(type->temp < 0 && type->is_special))
+		type->precision = type->precision + 1;
+	type->len = ft_pf_write_get_sign(&(type->temp), type) +
+	ft_pf_write_nlen(type->temp, 10);
+	type->prec_len = type->precision - type->len;
+	type->prec_len = (type->prec_len > 0) ? type->prec_len : 0;
+	type->pad_len = type->width - type->len - type->prec_len;
+	if (type->pad_len < 0)
+		type->pad_len = 0;
+	ft_pf_write_int_2(type, rst);
 }
 
 void					ft_pf_write_int(va_list vl, t_type *type, int *rst)
@@ -67,6 +73,6 @@ void					ft_pf_write_int(va_list vl, t_type *type, int *rst)
 			type->width = -type->width;
 			type->is_left = 1;
 		}
-		ft_pf_write_int_2(type, rst);
+		ft_pf_write_int_3(type, rst);
 	}
 }
