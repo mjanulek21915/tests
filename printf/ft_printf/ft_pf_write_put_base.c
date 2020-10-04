@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-static void			ft_pf_pb_rec(unsigned long long n, char *base, int len, int *rst)
+static void			ft_pf_pb_rec(unsigned long long n, char *base, unsigned long long len, int *rst)
 {
 	unsigned long long	temp;
 
@@ -24,7 +24,7 @@ static void			ft_pf_pb_rec(unsigned long long n, char *base, int len, int *rst)
 
 void				ft_pf_write_put_base(unsigned long long n, char *base, int *rst)
 {
-	int				len_base;
+	unsigned long long				len_base;
 
 	len_base = ft_pf_strlen(base);
 	ft_pf_pb_rec(n, base, len_base, rst);
