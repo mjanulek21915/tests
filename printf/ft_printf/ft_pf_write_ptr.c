@@ -68,7 +68,7 @@ void					ft_pf_write_ptr(va_list vl, t_type *type, int *rst)
 {
 	if (type->type == 'p')
 	{
-		type->temp = (void *)va_arg(vl, void *);
+		type->temp = (unsigned long long)va_arg(vl, unsigned long long);
 		if (type->is_precision && type->precision == 0 && type->temp == 0)
 			return ;
 		ft_pf_write_ptr_1(type);
