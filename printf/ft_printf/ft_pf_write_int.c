@@ -45,7 +45,7 @@ static void				ft_pf_write_int_2(t_type *type, int *rst)
 	type->pad_len = type->width - type->len - type->prec_len;
 	if (type->pad_len < 0)
 		type->pad_len = 0;
-	ft_pf_write_int_2(type, rst);
+	ft_pf_write_int_3(type, rst);
 }
 
 void					ft_pf_write_int(va_list vl, t_type *type, int *rst)
