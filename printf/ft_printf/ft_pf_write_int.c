@@ -73,6 +73,6 @@ void					ft_pf_write_int(va_list vl, t_type *type, int *rst)
 			type->width = -type->width;
 			type->is_left = 1;
 		}
-		ft_pf_write_int_3(type, rst);
+		ft_pf_write_int_2(type, rst);
 	}
 }
