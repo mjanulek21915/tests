@@ -52,10 +52,10 @@ int main(int ac, char **av)
 
 	char c = 'a';
 	char s[100] = "cesi";
-	void *p = (void *)42;
+	void *p = (void *)-42;
 	int d = -42;
 	int i = d;
-	int u = 42;
+	int u = -42;
 	int x = u;
 	int X = u;
 

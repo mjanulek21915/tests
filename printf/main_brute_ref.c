@@ -55,7 +55,7 @@ int main(int ac, char **av)
 	list['c'] = (void *)c;
 	char s[100] = "cesi";
 	list['s'] = (void *)s;
-	void *p = (void *)42;
+	void *p = (void *)-42;
 	list['p'] = p;
 	int d = -42;
 	list['d'] = (void *)d;
