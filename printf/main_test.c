@@ -15,5 +15,9 @@ int main()
     printf("ret = %d\n", printf("pf : .5d :[%.5d]\n", -8473));
     printf("ret = %d\n", ft_printf("ft : .5d :[%.5d]\n", -8473));
 	printf("%d\n", printf("pf : chiffre 1 %012d chiffre 2 %012d\n", 42, -42));
-	printf("%d\n", printf("ft : chiffre 1 %012d chiffre 2 %012d\n", 42, -42));
+	printf("%d\n", ft_printf("ft : chiffre 1 %012d chiffre 2 %012d\n", 42, -42));
+	printf("ret = %d\n", printf("pf : 01.50d:[%01.50d]\n", -8473));
+	printf("ret = %d\n", ft_printf("ft : 01.50d:[%01.50d]\n", -8473));
+    printf("ret = %d\n", printf("pf : 1.50d:[%1.50d]\n", -8473));
+    printf("ret = %d\n", ft_printf("ft : 1.50d:[%1.50d]\n", -8473));
 }
