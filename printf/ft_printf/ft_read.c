@@ -111,7 +111,6 @@ void						ft_read(char **str, va_list vl, int *rst)
 	if (!(ft_read_iz_in(*temp, CONV)))
 		return ;
 	type.type = *temp;
-	temp++;
 	*str = temp;
 	ft_write(&type, vl, rst);
 }
