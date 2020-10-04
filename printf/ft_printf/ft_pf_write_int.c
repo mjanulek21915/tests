@@ -15,7 +15,7 @@
 static void				ft_pf_write_int_2(t_type *type, int *rst)
 {
 	
-	if ((type->temp < 0 && !type->is_zero) || (type->temp < 0 && type->is_precision))
+	if ((type->temp < 0 && !type->is_zero) || (type->temp < 0 && type->is_special))
 		type->precision = type->precision + 1;
 	type->len = ft_pf_write_nlen(type->temp, 10) + ft_pf_write_get_sign(&(type->temp), type);
 	type->prec_len = type->precision - type->len;
@@ -47,6 +47,7 @@ void					ft_pf_write_int(va_list vl, t_type *type, int *rst)
 	if (type->type == 'd' || type->type == 'i')
 	{
 		type->temp = (int)va_arg(vl, int);
+		type->is_special = type->precision;
 		if (type->is_precision && type->precision == 0 && type->temp == 0)
 			return ;
 		if (type->is_left || type->is_precision || type->is_width)

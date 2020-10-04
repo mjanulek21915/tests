@@ -38,6 +38,7 @@ typedef struct			s_type
 	int					is_precision;
 	int					is_zero;
 	int					is_star;
+	int					is_special;
 	int					width_star;
 	int					prec_star;
 	char				padding;
