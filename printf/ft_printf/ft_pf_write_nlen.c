@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int					ft_pf_write_nlen(long long n, int base)
+int					ft_pf_write_nlen(unsigned long long n, int base)
 {
 	int i;
 
