@@ -66,5 +66,4 @@ void					ft_pf_write_int(va_list vl, t_type *type, int *rst)
 		}
 		ft_pf_write_int_2(type, rst);
 	}
-	return (0);
 }
