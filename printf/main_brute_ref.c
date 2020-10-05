@@ -50,23 +50,27 @@ int main(int ac, char **av)
 	char fmt[100];
 	int z = 100;
 
+	int num = 0;
+
+
 	void *list[128];
 	char c = 'a';
 	list['c'] = (void *)c;
 	char s[100] = "cesi";
 	list['s'] = (void *)s;
-	void *p = (void *)0;
-	list['p'] = 0;
-	int d = 0;
+	void *p = (void *)num;
+	list['p'] = num;
+	int d = num;
 	list['d'] = (void *)d;
 	int i = d;
 	list['i'] = (void *)i;
-	int u = 0;
+	int u = num;
 	list['u'] = (void *)u;
 	int x = u;
 	list['x'] = (void *)x;
 	int X = u;
 	list['X'] = (void *)X;
+	
 	int count = 0;
 
 	int rst;
