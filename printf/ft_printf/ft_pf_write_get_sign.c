@@ -29,7 +29,7 @@ int			ft_pf_write_get_sign(long long *temp, t_type *type)
 	else if (type->is_space)
 	{
 		type->sign = 0;
-		if (type->is_precision && !type->is_zero)
+		if (type->is_precision)
 			return(1);
 		return (0);
 	}
