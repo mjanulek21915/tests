@@ -3,7 +3,7 @@
 random=0
 multiple_flags=1
 precision=0
-show_all=0
+show_all=1
 
 
 start=$(date +'%s')
@@ -12,7 +12,7 @@ text_list=("|" )
 flag_list=("r" " " "-" "+" "0")
 width_list=("r" '*' "0" "1" "3" "4" "5" "42")
 prec_list=("r" '.*' ".0" ".1" ".3" ".4" ".5" ".42")
-conv_list=("p" "d" "i" "u" "x" "X")
+conv_list=("d")
 count_list=("0" "-5" "5")
 whole_list=("r" " " "-" "+" "0" '*' "1" '.*' ".0" ".1")
 path="logs/log_$start"
