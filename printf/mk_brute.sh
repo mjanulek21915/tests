@@ -3,7 +3,7 @@
 random=0
 multiple_flags=1
 precision=0
-show_all=1
+show_all=0
 
 
 start=$(date +'%s')
@@ -228,7 +228,7 @@ if [ $multiple_flags -eq 1 ]
 then
 	width_list=("r" '*' "1" "12")
 	prec_list=("r" '.*' ".1" ".12")
-	count_list=("6" "-6" "12" "-12")
+	count_list=("6" "-6" "4" "-4" "0")
 	old_ifs=$IFS
 	IFS=""
 	for conv in "${conv_list[@]}"
