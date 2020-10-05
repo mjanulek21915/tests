@@ -29,8 +29,8 @@ int			ft_pf_write_get_sign(long long *temp, t_type *type)
 	else if (type->is_space)
 	{
 		type->sign = 0;
-		if ((type->is_zero && !type->is_special && !type->is_width) || (!type->is_zero))
-			return(1);
+		// if ((type->is_zero && !type->is_special && !type->is_width) || (!type->is_zero))
+		// 	return(1);
 		return (0);
 	}
 	type->sign = 0;
