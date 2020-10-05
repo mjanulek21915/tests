@@ -47,7 +47,7 @@ static void				ft_pf_write_int_2(t_type *type, int *rst)
 	type->pad_len = type->width - type->len - type->prec_len;
 	if (type->is_space || type->is_signed)
 		type->pad_len = type->pad_len - 1;
-	if (type->is_width_orig && !type->is_prec_orig && type->is_zero)
+	if (type->is_width_orig && !type->is_prec_orig && type->is_zero && type->is_space)
 		type->prec_len = type->prec_len - 1;
 	if (type->pad_len < 0)
 		type->pad_len = 0;
@@ -60,7 +60,7 @@ void					ft_pf_write_int(va_list vl, t_type *type, int *rst)
 	{
 		type->temp = (int)va_arg(vl, int);
 		if (type->precision > -1 && type->is_precision)
-			type->is_prec_orig = type->is_precision;
+			type->is_prec_orig = 1;
 		if (type->width > -1 && type->is_width)
 			type->is_width_orig = 1;
 		if (type->is_precision && type->precision == 0 && type->temp == 0)
