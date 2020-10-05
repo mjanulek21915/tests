@@ -24,7 +24,7 @@ int			ft_pf_write_get_sign(long long *temp, t_type *type)
 	else if (type->is_signed)
 	{
 		type->sign = '+';
-		return (1);
+		return (0);
 	}
 	else if (type->is_space)
 	{
