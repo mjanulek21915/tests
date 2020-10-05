@@ -47,7 +47,7 @@ static void				ft_pf_write_int_2(t_type *type, int *rst)
 	type->pad_len = type->width - type->len - type->prec_len;
 	if (type->is_space || type->is_signed)
 		type->pad_len = type->pad_len - 1;
-	if (type->is_width_orig && !type->is_prec_orig && type->is_zero && type->is_space)
+	if ((type->is_width_orig && !type->is_prec_orig && type->is_zero && type->is_space) || (type->is_width && type->is_zero && type->is_signed && !type->is_prec_orig))
 		type->prec_len = type->prec_len - 1;
 	if (type->pad_len < 0)
 		type->pad_len = 0;
