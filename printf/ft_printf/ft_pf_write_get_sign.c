@@ -32,5 +32,7 @@ int			ft_pf_write_get_sign(long long *temp, t_type *type)
 		return (0);
 	}
 	type->sign = 0;
+	if (type->is_zero)
+		return (1);
 	return (0);
 }
