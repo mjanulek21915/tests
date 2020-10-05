@@ -12,8 +12,8 @@ text_list=("|" )
 flag_list=("r" " " "-" "+" "0")
 width_list=("r" '*' "0" "1" "3" "4" "5" "42")
 prec_list=("r" '.*' ".0" ".1" ".3" ".4" ".5" ".42")
-conv_list=("c" "s" "p" "d" "i" "u" "x" "X" "%")
-count_list=("0" "-1" "1" "-3" "3" "-4" "4" "-5" "5" "-42" "42")
+conv_list=("p" "d" "i" "u" "x" "X")
+count_list=("0" "-5" "5")
 whole_list=("r" " " "-" "+" "0" '*' "1" '.*' ".0" ".1")
 path="logs/log_$start"
 

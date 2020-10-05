@@ -55,13 +55,13 @@ int main(int ac, char **av)
 	list['c'] = (void *)c;
 	char s[100] = "cesi";
 	list['s'] = (void *)s;
-	void *p = (void *)-42;
-	list['p'] = p;
-	int d = -42;
+	void *p = (void *)0;
+	list['p'] = 0;
+	int d = 0;
 	list['d'] = (void *)d;
 	int i = d;
 	list['i'] = (void *)i;
-	int u = 42;
+	int u = 0;
 	list['u'] = (void *)u;
 	int x = u;
 	list['x'] = (void *)x;
