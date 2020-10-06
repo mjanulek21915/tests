@@ -363,7 +363,7 @@ then
 											echo "    SEGFAULT REF"
 											echo "SEGFAULT REF : ${fmt//"r"}" >> $log_segfault
 										fi
-										echo "${fmt//"r"} >> $log_full
+										echo "${fmt//"r"}" >> $log_full
 										echo "test : ${temp_test}" >> $log_full
 										echo "ref. : ${temp_ref}" >> $log_full
 										echo "" >> $log_full
