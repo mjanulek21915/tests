@@ -16,6 +16,8 @@ static void				ft_pf_write_int_3(t_type *type, int *rst)
 {
 	if (type->is_space && !type->is_signed)
 		ft_pf_putchar(" ", rst);
+	if (type->print_none)
+		type->pad_len = type->pad_len + 1;
 	if (type->is_left)
 	{
 		if (type->sign)
