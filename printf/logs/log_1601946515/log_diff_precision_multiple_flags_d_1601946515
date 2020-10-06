@@ -1,0 +1,10765 @@
+LOG_DIFF conv : d
+DIFF : |%.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |% .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |% .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%--.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |% .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% --.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% --*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% --1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0-.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0-*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0-1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 00.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 00*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 001.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%--.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- +.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- +*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- +1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%--.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%---.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%---*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-00.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-00*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+001.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0--.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0--*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%000.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%000*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |% .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% --.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% --*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% --1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0-.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0-*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0-1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 00.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 00*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 001.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%    .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%    *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%    1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%   +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%   +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%   0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%   01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  - .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  - *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  - 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  --.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  --*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  --1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  -+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  -+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  -+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  -0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  -0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  -01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  + .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  + *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  + 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  +-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  +-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  +-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  ++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  ++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  ++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  +0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  +0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  +01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  0-.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  0-*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  0-1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%  00.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  00*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%  001.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% --.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% --*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% --1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - +.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% - +*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% - +1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% - 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% - 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% --.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% --*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% --1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% ---.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% ---*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% ---1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% --+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% --+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% --+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% --0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% --0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% --01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+ .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+ *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+ 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -++.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -++*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -++1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -+01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -0-.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -0-*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -0-1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -0+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -0+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -0+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% -00.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -00*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% -001.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +  .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +  *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +  1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + -.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + -*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + -1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + 0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + 0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% + 01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +- .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +- *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +- 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +--.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +--*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +--1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +-01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% ++01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0 .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0 *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +00.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +00*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% +001.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0-.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0-*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0-1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 00.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 00*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 001.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0 +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0 +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0-.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0-*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0-1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0--.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0--*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0--1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0-0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0-0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0-01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 0+01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 00.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 00*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 001.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 00 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 00 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 00 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 00-.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 00-*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 00-1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 00+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 00+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 00+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |% 000.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 000*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |% 0001.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%--.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- +.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- +*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- +1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%--.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%---.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%---*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-00.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-00*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- +.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- +*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- +1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-   .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-   *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-   1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  +.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-  +*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-  +1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-  0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-  01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- - .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- - *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- - 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- --.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- --*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- --1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- -+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- -+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- -+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- -0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- -0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- -01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- +.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- +*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- +1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- + .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- + *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- + 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- +-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- +-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- +-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- ++.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- ++*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- ++1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- +0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- +0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- +01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 0-.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 0-*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 0-1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 0+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- 0+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- 0+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%- 00.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 00*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%- 001.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%--.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%---.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%---*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%--  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%--  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%--  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-- -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-- -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-- -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-- +.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-- +*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-- +1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-- 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-- 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-- 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%---.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%---*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%--- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%--- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%----.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%----*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%---+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%---+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%---+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%---0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%---0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+ .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+ *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+ 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--++.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--++*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--++1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--+01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%--0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%--0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%--0-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--0-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--0+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--0+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--0+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%--00.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%--00*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+  .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+  *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+  1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ -.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ -*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ -1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ +.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ +*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ +1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ 0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ 0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+ 01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+- .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+- *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+- 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+--.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+--*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+--1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+-01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++ .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++ *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++ 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+++.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+++*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+++1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-++01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0 .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0 *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+0+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+00.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+00*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-+001.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-00.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-00*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0 -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0 -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0 -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0 +.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0 +*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0 +1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-0--.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0--*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0-0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0-0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-0+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+ .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+ *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+ 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0++.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0++*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0++1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-0+01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-00.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-00*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-00 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-00 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-00 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%-00-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-00-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-00+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-00+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-00+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%-000.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%-000*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+001.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+   .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+   *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+   1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  -.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  -*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  -1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+  01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ - .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ - *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ - 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ --.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ --*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ --1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ -01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ + .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ + *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ + 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ ++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ ++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ ++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ +01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0 .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0 *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 00.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 00*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+ 001.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-  .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-  *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-  1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- -.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- -*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- -1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- +.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- +*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- +1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- 0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- 0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+- 01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-- .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-- *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-- 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+---.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+---*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+---1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+--01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+ .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+ *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+ 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-++.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-++*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-++1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-+01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0 .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0 *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-0+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-00.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-00*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+-001.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++  .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++  *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++  1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ -.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ -*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ -1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ 0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ 0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++ 01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++- .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++- *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++- 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++--.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++--*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++--1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++-01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+++01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0 .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0 *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++00.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++00*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%++001.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+001.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0  .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0  *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0  1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 -.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 -*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 -1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0 01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0- .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0- *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0- 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0--.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0--*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0--1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0-01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0+01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+001.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00 .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00 *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+00+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+000.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+000*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%+0001.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0--.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0--*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%000.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%000*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0   .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0   *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0   1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0  +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0  +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0  0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0  01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 - .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 - *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 - 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 --.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 --*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 --1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 -+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 -+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 -+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 -0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 -0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 -01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 + .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 + *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 + 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 +-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 +-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 +-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 ++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 ++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 ++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 +0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 +0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 +01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 0-.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 0-*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 0-1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0 00.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 00*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0 001.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0--.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0--*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0-  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0-  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0-  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0- -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0- -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0- -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0- +.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0- +*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0- +1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0- 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0- 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0- 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0--.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0--*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0-- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0-- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0---.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0---*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0--+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0--+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0--+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0--0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0--0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+ .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+ *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+ 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-++.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-++*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-++1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-+01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-0 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0-0 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0-0 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%0-0-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-0-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-0+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-0+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-0+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0-00.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0-00*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+  .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+  *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+  1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ -.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ -*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ -1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ 0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ 0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+ 01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+- .*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+- *.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+- 1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+--.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+--*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+--1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-0.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-0*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+-01.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0++01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0 .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0 *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+0+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+00.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+00*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0+001.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%000.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%000*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00  .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00  *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00  1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00 -.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00 -*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00 -1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00 +.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00 +*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00 +1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00 0.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00 0*.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00 01.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00- .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00- *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00- 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%00--.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00--*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00-+.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00-+*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00-+1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00-0.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00-0*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%00+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+ .*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+ *.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+ 1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+-.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+-*.*d| COUNTS : 0 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+-1.*d| COUNT : 0
+test : |+ |
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00++.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00++*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00++1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+0.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+0*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%00+01.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%000.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%000*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%000 .*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%000 *.*d| COUNTS : 0 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%000 1.*d| COUNT : 0
+test : |  |
+rst = 4
+ref. : | |
+rst = 3
+
+DIFF : |%000-.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%000-*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%000+.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%000+*.*d| COUNTS : 0 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%000+1.*d| COUNT : 0
+test : | +|
+rst = 4
+ref. : |+|
+rst = 3
+
+DIFF : |%0000.*d| COUNT : 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
+DIFF : |%0000*.*d| COUNTS : 0 0
+test : | |
+rst = 3
+ref. : ||
+rst = 2
+
