@@ -3,7 +3,7 @@
 random=0
 multiple_flags=1
 precision=0
-show_all=0
+show_all=1
 
 
 start=$(date +'%s')
