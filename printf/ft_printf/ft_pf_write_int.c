@@ -14,6 +14,7 @@
 
 static void				ft_pf_write_int_3(t_type *type, int *rst)
 {
+	if (type->print_none)
 	if (type->is_space && !type->is_signed)
 		ft_pf_putchar(" ", rst);
 	if (type->is_left)
@@ -34,8 +35,6 @@ static void				ft_pf_write_int_3(t_type *type, int *rst)
 		ft_pf_write_padding(type->prec_len, '0', rst);
 		if (!type->print_none)
 			ft_pf_write_put_base(type->temp, BASE_10, rst);
-		else if (type->is_width)
-			ft_pf_putchar(" ", rst);
 	}
 }
 
