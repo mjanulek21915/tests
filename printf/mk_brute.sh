@@ -326,7 +326,7 @@ then
 													echo "    SEGFAULT REF"
 													echo "SEGFAULT REF : ${fmt//"r"} COUNTS : $count $count_b" >> $log_segfault
 												fi
-												echo "${fmt//"r"} COUNT : $count" >> $log_full
+												echo "${fmt//"r"} COUNTS : $count $count_b" >> $log_full
 												echo "test : ${temp_test}" >> $log_full
 												echo "ref. : ${temp_ref}" >> $log_full
 												echo "" >> $log_full
@@ -363,7 +363,7 @@ then
 											echo "    SEGFAULT REF"
 											echo "SEGFAULT REF : ${fmt//"r"}" >> $log_segfault
 										fi
-										echo "${fmt//"r"} COUNT : $count" >> $log_full
+										echo "${fmt//"r"} >> $log_full
 										echo "test : ${temp_test}" >> $log_full
 										echo "ref. : ${temp_ref}" >> $log_full
 										echo "" >> $log_full
