@@ -1,0 +1,3421 @@
+LOG_DIFF conv : d
+DIFF : |%0*.*d| COUNTS : 6 -6
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0*.*d| COUNTS : 6 -4
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0*.*d| COUNTS : 4 -6
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%0*.*d| COUNTS : 4 -4
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%012.*d| COUNT : -6
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%012.*d| COUNT : -4
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0*.*d| COUNTS : 6 -6
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0*.*d| COUNTS : 6 -4
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0*.*d| COUNTS : 4 -6
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%0*.*d| COUNTS : 4 -4
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%012.*d| COUNT : -6
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%012.*d| COUNT : -4
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00*.*d| COUNTS : 6 -6
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00*.*d| COUNTS : 6 -4
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00*.*d| COUNTS : 4 -6
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%00*.*d| COUNTS : 4 -4
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%0012.*d| COUNT : -6
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0012.*d| COUNT : -4
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%  0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%  0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%  012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% +0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% +0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% +012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 00*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 00*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+ 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+ 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+ 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%++0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%++0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%++012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+00*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+00*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0*.*d| COUNTS : 6 -6
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0*.*d| COUNTS : 6 -4
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0*.*d| COUNTS : 4 -6
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%0*.*d| COUNTS : 4 -4
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%012.*d| COUNT : -6
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%012.*d| COUNT : -4
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00*.*d| COUNTS : 6 -6
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00*.*d| COUNTS : 6 -4
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00*.*d| COUNTS : 4 -6
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%00*.*d| COUNTS : 4 -4
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%0012.*d| COUNT : -6
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0012.*d| COUNT : -4
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0  *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0  *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0  12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 +*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 +*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 +12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+ *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+ *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+ 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0++*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0++*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0++12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00*.*d| COUNTS : 6 -6
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00*.*d| COUNTS : 6 -4
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00*.*d| COUNTS : 4 -6
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%00*.*d| COUNTS : 4 -4
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%0012.*d| COUNT : -6
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0012.*d| COUNT : -4
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%00 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%00+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%000*.*d| COUNTS : 6 -6
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%000*.*d| COUNTS : 6 -4
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%000*.*d| COUNTS : 4 -6
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%000*.*d| COUNTS : 4 -4
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%00012.*d| COUNT : -6
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00012.*d| COUNT : -4
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%  0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%  0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%  012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% +0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% +0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% +012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 00*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 00*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%  0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%  0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%  012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%   0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%   0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%   012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%  +0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%  +0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%  +012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%  0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%  0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%  012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%  0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%  0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%  0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%  0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%  0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%  0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%  00*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%  00*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%  0012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% +0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% +0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% +012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% + 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% + 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% + 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% ++0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% ++0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% ++012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% +0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% +0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% +012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% +0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% +0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% +0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% +0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% +0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% +0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% +00*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% +00*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% +0012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 00*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 00*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0  *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0  *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0  12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0 +*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0 +*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0 +12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0+ *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0+ *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0+ 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0++*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0++*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0++12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 0+0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 0+0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0+012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 00*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 00*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 0012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 00 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 00 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 00 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 00+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 00+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 00+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |% 000*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |% 000*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |% 00012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+ 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+ 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+ 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%++0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%++0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%++012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+00*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+00*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+ 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+ 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+ 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+  0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+  0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+  012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+ +0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+ +0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+ +012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+ 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+ 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+ 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+ 0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+ 0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+ 0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+ 0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+ 0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+ 0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+ 00*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+ 00*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+ 0012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%++0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%++0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%++012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%++ 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%++ 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%++ 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+++0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+++0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+++012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%++0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%++0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%++012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%++0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%++0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%++0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%++0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%++0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%++0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%++00*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%++00*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%++0012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+00*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+00*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0  *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0  *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0  12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0 +*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0 +*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0 +12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0+ *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0+ *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0+ 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0++*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0++*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0++12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+0+0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+0+0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0+012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+00*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+00*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+0012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+00 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+00 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+00 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+00+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+00+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+00+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%+000*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%+000*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%+00012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0*.*d| COUNTS : 6 -6
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0*.*d| COUNTS : 6 -4
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0*.*d| COUNTS : 4 -6
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%0*.*d| COUNTS : 4 -4
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%012.*d| COUNT : -6
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%012.*d| COUNT : -4
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00*.*d| COUNTS : 6 -6
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00*.*d| COUNTS : 6 -4
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00*.*d| COUNTS : 4 -6
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%00*.*d| COUNTS : 4 -4
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%0012.*d| COUNT : -6
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0012.*d| COUNT : -4
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0  *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0  *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0  12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 +*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 +*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 +12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+ *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+ *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+ 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0++*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0++*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0++12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00*.*d| COUNTS : 6 -6
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00*.*d| COUNTS : 6 -4
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00*.*d| COUNTS : 4 -6
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%00*.*d| COUNTS : 4 -4
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%0012.*d| COUNT : -6
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0012.*d| COUNT : -4
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%00 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%00+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%000*.*d| COUNTS : 6 -6
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%000*.*d| COUNTS : 6 -4
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%000*.*d| COUNTS : 4 -6
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%000*.*d| COUNTS : 4 -4
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%00012.*d| COUNT : -6
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00012.*d| COUNT : -4
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0  *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0  *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0  12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 +*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 +*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 +12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0  *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0  *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0  12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0   *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0   *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0   12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0  +*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0  +*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0  +12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0  0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0  0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0  012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 +*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 +*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 +12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 + *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 + *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 + 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 ++*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 ++*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 ++12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 +0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 +0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 +012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0 00*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0 00*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0 0012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+ *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+ *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+ 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0++*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0++*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0++12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+ *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+ *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+ 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+  *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+  *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+  12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+ +*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+ +*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+ +12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+ 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+ 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+ 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0++*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0++*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0++12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0++ *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0++ *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0++ 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+++*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+++*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+++12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0++0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0++0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0++012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+0 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+0 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+0 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+0+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+0+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+0+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0+00*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0+00*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%0+0012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00*.*d| COUNTS : 6 -6
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00*.*d| COUNTS : 6 -4
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00*.*d| COUNTS : 4 -6
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%00*.*d| COUNTS : 4 -4
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%0012.*d| COUNT : -6
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0012.*d| COUNT : -4
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%00 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%00+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%000*.*d| COUNTS : 6 -6
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%000*.*d| COUNTS : 6 -4
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%000*.*d| COUNTS : 4 -6
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%000*.*d| COUNTS : 4 -4
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%00012.*d| COUNT : -6
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00012.*d| COUNT : -4
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%00 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00  *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00  *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%00  12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00 +*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00 +*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%00 +12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00 0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00 0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%00 012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%00+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00+ *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00+ *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%00+ 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00++*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00++*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%00++12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00+0*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%00+0*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%00+012d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%000*.*d| COUNTS : 6 -6
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%000*.*d| COUNTS : 6 -4
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%000*.*d| COUNTS : 4 -6
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%000*.*d| COUNTS : 4 -4
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%00012.*d| COUNT : -6
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%00012.*d| COUNT : -4
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%000 *d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%000 *d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%000 12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%000+*d| COUNT : 6
+test : |-0042|
+rst = 7
+ref. : |-00042|
+rst = 8
+
+DIFF : |%000+*d| COUNT : 4
+test : |-42|
+rst = 5
+ref. : |-042|
+rst = 6
+
+DIFF : |%000+12d|
+test : |-0000000042|
+rst = 13
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%0000*.*d| COUNTS : 6 -6
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0000*.*d| COUNTS : 6 -4
+test : |-000042|
+rst = 9
+ref. : |-00042|
+rst = 8
+
+DIFF : |%0000*.*d| COUNTS : 4 -6
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%0000*.*d| COUNTS : 4 -4
+test : |-0042|
+rst = 7
+ref. : |-042|
+rst = 6
+
+DIFF : |%000012.*d| COUNT : -6
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
+DIFF : |%000012.*d| COUNT : -4
+test : |-000000000042|
+rst = 15
+ref. : |-00000000042|
+rst = 14
+
