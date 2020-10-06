@@ -26,9 +26,11 @@ then
 		if [ $conv == "X" ]
 		then
 			log_diff="${path}/log_diff_precision_random_x_big_${start}"
+			log_full="${path}/log_diff_precision_full_random_x_big_${start}"
 			log_segfault="${path}/log_segfault_precision_random_x_big_${start}"
 		else
 			log_diff="${path}/log_diff_precision_random_${conv}_${start}"
+			log_full="${path}/log_diff_precision_full_random_${conv}_${start}"
 			log_segfault="${path}/log_segfault_precision_random_${conv}_${start}"
 		fi
 		echo "LOG_DIFF conv : ${conv}">$log_diff
@@ -71,6 +73,11 @@ then
 							then
 								echo "    DIFF : ${fmt//"r"}" 
 								echo ""
+								echo "DIFF : ${fmt//"r"}" >> $log_diff
+								echo "test : ${temp_test}" >> $log_diff
+								echo "ref. : ${temp_ref}" >> $log_diff
+								echo "" >> $log_diff
+							else
 								echo "DIFF : ${fmt//"r"}" >> $log_diff
 								echo "test : ${temp_test}" >> $log_diff
 								echo "ref. : ${temp_ref}" >> $log_diff
@@ -236,12 +243,15 @@ then
 		if [ $conv == "X" ]
 		then
 			log_diff="${path}/log_diff_precision_multiple_flags_x_big_${start}"
+			log_full="${path}/log_diff_precision_full_random_x_big_${start}"
 			log_segfault="${path}/log_segfault_precision_multiple_flags_x_big_${start}"
 		else
 			log_diff="${path}/log_diff_precision_multiple_flags_${conv}_${start}"
+			log_full="${path}/log_diff_precision_full_multiple_flags_${conv}_${start}"
 			log_segfault="${path}/log_segfault_precision_multiple_flags_${conv}_${start}"
 		fi
 		echo "LOG_DIFF conv : ${conv}">$log_diff
+		echo "LOG_FULL conv : ${conv}">$log_full
 		echo "LOG_SEGFAULT conv : ${conv}">$log_segfault
 		echo "testing multiple flags : $conv"
 		for text in "${text_list[@]}"
@@ -276,6 +286,10 @@ then
 												echo "    SEGFAULT REF"
 												echo "SEGFAULT REF : ${fmt//"r"} COUNT : $count" >> $log_segfault
 											fi
+											echo "${fmt//"r"} COUNT : $count" >> $log_full
+											echo "test : ${temp_test}" >> $log_full
+											echo "ref. : ${temp_ref}" >> $log_full
+											echo "" >> $log_full
 											if [ -z $temp_test ] || [ -z $temp_ref ]
 											then
 												echo "    TEST VIDE : ${fmt//"r"}" 
