@@ -18,6 +18,7 @@ int			ft_pf_write_get_sign(long long *temp, t_type *type)
 	if (*temp < 0)
 	{
 		type->sign = '-';
+		type->is_neg = 1;
 		*temp = -*temp;
 		return (1);
 	}
