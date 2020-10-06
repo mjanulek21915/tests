@@ -14,7 +14,8 @@
 
 static void				ft_pf_write_int_3(t_type *type, int *rst)
 {
-	if ((!type->is_neg && type->is_space && !type->is_signed) || (type->is_neg && type->is_space && !type->is_signed && !type->is_left && !type->is_prec_orig))
+	if ((!type->is_neg && type->is_space && !type->is_signed)
+	// || (type->is_neg && type->is_space && !type->is_signed && !type->is_left && !type->is_prec_orig))
 		ft_pf_putchar(" ", rst);
 	if (type->is_left)
 	{
