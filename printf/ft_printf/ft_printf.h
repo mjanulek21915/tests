@@ -41,6 +41,7 @@ typedef struct			s_type
 	int					is_prec_orig;
 	int					is_width_orig;
 	int					is_neg;
+	int					is_changed;
 	int					print_none;
 	int					width_star;
 	int					prec_star;
