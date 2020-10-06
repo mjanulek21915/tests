@@ -326,6 +326,10 @@ then
 													echo "    SEGFAULT REF"
 													echo "SEGFAULT REF : ${fmt//"r"} COUNTS : $count $count_b" >> $log_segfault
 												fi
+												echo "${fmt//"r"} COUNT : $count" >> $log_full
+												echo "test : ${temp_test}" >> $log_full
+												echo "ref. : ${temp_ref}" >> $log_full
+												echo "" >> $log_full
 												if [ -z "$temp_test" ] || [ -z "$temp_ref" ]
 												then
 													echo "    TEST VIDE : ${fmt//"r"}" 
@@ -359,6 +363,10 @@ then
 											echo "    SEGFAULT REF"
 											echo "SEGFAULT REF : ${fmt//"r"}" >> $log_segfault
 										fi
+										echo "${fmt//"r"} COUNT : $count" >> $log_full
+										echo "test : ${temp_test}" >> $log_full
+										echo "ref. : ${temp_ref}" >> $log_full
+										echo "" >> $log_full
 										if [ -z $temp_test ] || [ -z $temp_ref ]
 										then
 											echo "    TEST VIDE : ${fmt//"r"}" 
