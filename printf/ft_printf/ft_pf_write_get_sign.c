@@ -20,7 +20,7 @@ int			ft_pf_write_get_sign(long long *temp, t_type *type)
 		type->sign = '-';
 		type->is_neg = 1;
 		*temp = -*temp;
-		return (0);
+		return (1);
 	}
 	else if (type->is_signed)
 	{
