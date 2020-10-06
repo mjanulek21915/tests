@@ -40,6 +40,7 @@ typedef struct			s_type
 	int					is_star;
 	int					is_prec_orig;
 	int					is_width_orig;
+	int					print_none;
 	int					width_star;
 	int					prec_star;
 	char				padding;

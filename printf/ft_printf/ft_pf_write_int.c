@@ -22,7 +22,8 @@ static void				ft_pf_write_int_3(t_type *type, int *rst)
 			ft_pf_putchar(&(type->sign), rst);
 		if (type->is_precision)
 			ft_pf_write_padding(type->prec_len, '0', rst);
-		ft_pf_write_put_base(type->temp, BASE_10, rst);
+		if (!type->print_none)
+			ft_pf_write_put_base(type->temp, BASE_10, rst);
 		ft_pf_write_padding(type->pad_len, type->padding, rst);
 	}
 	else
@@ -31,7 +32,8 @@ static void				ft_pf_write_int_3(t_type *type, int *rst)
 		if (type->sign)
 			ft_pf_putchar(&(type->sign), rst);
 		ft_pf_write_padding(type->prec_len, '0', rst);
-		ft_pf_write_put_base(type->temp, BASE_10, rst);
+		if (!type->print_none)
+			ft_pf_write_put_base(type->temp, BASE_10, rst);
 	}
 }
 
@@ -64,7 +66,7 @@ void					ft_pf_write_int(va_list vl, t_type *type, int *rst)
 		if (type->width > -1 && type->is_width)
 			type->is_width_orig = 1;
 		if (type->is_precision && type->precision == 0 && type->temp == 0)
-			return ;
+			type->print_none = 1;
 		if (type->is_left || type->is_precision || type->is_width)
 			type->padding = ' ';
 		if (type->is_width && !type->is_precision

@@ -84,6 +84,7 @@ static void					ft_read_init(t_type *type)
 	type->is_star = 0;
 	type->is_prec_orig = 0;
 	type->is_width_orig = 0;
+	type->print_none = 0;
 	type->width_star = 0;
 	type->prec_star = 0;
 	type->padding = ' ';
