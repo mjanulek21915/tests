@@ -45,8 +45,8 @@ static void				ft_pf_write_int_2(t_type *type, int *rst)
 		type->precision = type->precision + 1;
 	type->len = ft_pf_write_get_sign(&(type->temp), type) +
 	ft_pf_write_nlen(type->temp, 10);
-	if (type->is_neg && type->is_changed && (!type->is_neg_prec && !type->is_left))
-		type->len = type->len - 1;
+	// if (type->is_neg && type->is_changed && (!type->is_neg_prec &&))
+	// 	type->len = type->len - 1;
 	if (type->print_none)
 		type->len = 0;
 	type->prec_len = type->precision - type->len;
@@ -54,8 +54,8 @@ static void				ft_pf_write_int_2(t_type *type, int *rst)
 	type->pad_len = type->width - type->len - type->prec_len;
 	if ((type->is_space || type->is_signed) && !type->is_neg)  
 		type->pad_len = type->pad_len - 1;
-	if ((type->is_width_orig && !type->is_prec_orig && type->is_zero && type->is_space)
-	 || (type->is_width && type->is_zero && type->is_signed && !type->is_prec_orig))
+	if ((((type->is_width_orig && !type->is_prec_orig && type->is_zero && type->is_space)
+	 || (type->is_width && type->is_zero && type->is_signed && !type->is_prec_orig))) && !type->is_neg)
 		type->prec_len = type->prec_len - 1;
 	if (type->pad_len < 0)
 		type->pad_len = 0;
