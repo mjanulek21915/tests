@@ -81,5 +81,6 @@ void					ft_pf_write_hex_a(va_list vl, t_type *type, int *rst);
 void					ft_pf_write_char(va_list vl, t_type *type, int *rst);
 int						ft_read_iz_in(char c, char *str);
 int						ft_read_atoi(char **str);
+void					ft_read_get_flags(t_type *type, char **str);
 
 #endif

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_pf_write_get_sign.c                             :+:      :+:    :+:   */
+/*   ft_read_get_flags.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjanulek <mjanulek@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,26 +12,21 @@
 
 #include "ft_printf.h"
 
-int			ft_pf_write_get_sign(long long *temp, t_type *type)
+void					ft_read_get_flags(t_type *type, char **str)
 {
-	type->sign = 0;
-	if (*temp < 0)
+	while (**str == '+' || **str == '-' || **str == '0' || **str == ' ')
 	{
-		type->sign = '-';
-		type->is_neg = 1;
-		*temp = -*temp;
-		return (1);
+		if (**str == '+')
+			type->is_signed = 1;
+		if (**str == '-')
+			type->is_left = 1;
+		if (**str == '0')
+		{
+			type->padding = '0';
+			type->is_zero = 1;
+		}
+		if (**str == ' ')
+			type->is_space = 1;
+		(*str)++;
 	}
-	else if (type->is_signed)
-	{
-		type->sign = '+';
-		return (0);
-	}
-	else if (type->is_space)
-	{
-		type->sign = 0;
-		return (0);
-	}
-	type->sign = 0;
-	return (0);
 }

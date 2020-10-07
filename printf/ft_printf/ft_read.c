@@ -53,25 +53,6 @@ static void					get_nums(t_type *type, char **str, va_list vl)
 	get_nums_1(type, str, vl);
 }
 
-static void					get_flags(t_type *type, char **str)
-{
-	while (**str == '+' || **str == '-' || **str == '0' || **str == ' ')
-	{
-		if (**str == '+')
-			type->is_signed = 1;
-		if (**str == '-')
-			type->is_left = 1;
-		if (**str == '0')
-		{
-			type->padding = '0';
-			type->is_zero = 1;
-		}
-		if (**str == ' ')
-			type->is_space = 1;
-		(*str)++;
-	}
-}
-
 static void					ft_read_init(t_type *type)
 {
 	type->is_percent = 0;
@@ -96,6 +77,10 @@ static void					ft_read_init(t_type *type)
 	type->type = 0;
 	type->sign = 0;
 	type->len = 0;
+}
+
+static void					ft_read_init_2(t_type *type)
+{
 	type->prec_len = 0;
 	type->pad_len = 0;
 	type->temp = 0;
@@ -111,7 +96,8 @@ void						ft_read(char **str, va_list vl, int *rst)
 	temp = *str;
 	temp++;
 	ft_read_init(&type);
-	get_flags(&type, &temp);
+	ft_read_init_2(&type);
+	ft_read_get_flags(&type, &temp);
 	get_nums(&type, &temp, vl);
 	if (!(ft_read_iz_in(*temp, CONV)))
 		return ;
