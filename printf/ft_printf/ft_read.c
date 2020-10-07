@@ -85,6 +85,7 @@ static void					ft_read_init(t_type *type)
 	type->is_prec_orig = 0;
 	type->is_width_orig = 0;
 	type->is_neg = 0;
+	type->is_neg_prec = 0;
 	type->is_changed = 0;
 	type->print_none = 0;
 	type->width_star = 0;

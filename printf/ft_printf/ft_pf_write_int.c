@@ -45,7 +45,7 @@ static void				ft_pf_write_int_2(t_type *type, int *rst)
 		type->precision = type->precision + 1;
 	type->len = ft_pf_write_get_sign(&(type->temp), type) +
 	ft_pf_write_nlen(type->temp, 10);
-	if (type->is_neg && type->is_changed)
+	if (type->is_neg && type->is_changed && ! type->is_neg_prec)
 	//  || (type->is_neg && type->is_zero && !type->is_prec_orig))
 		type->len = type->len - 1;
 	if (type->print_none)
@@ -70,6 +70,8 @@ void					ft_pf_write_int(va_list vl, t_type *type, int *rst)
 		type->temp = (int)va_arg(vl, int);
 		if (type->precision > -1 && type->is_precision)
 			type->is_prec_orig = 1;
+		if (type->precision > 0 && type->is_precision)
+			type->is_neg_prec = 1;
 		if (type->width > -1 && type->is_width)
 			type->is_width_orig = 1;
 		if (type->is_precision && type->precision == 0 && type->temp == 0)
