@@ -15,6 +15,8 @@
 static void				ft_pf_write_uint_2(t_type *type, int *rst)
 {
 	type->len = ft_pf_write_nlen(type->temp, 10);
+	if (type->print_none)
+		type->len = 0;
 	type->prec_len = type->precision - type->len;
 	type->prec_len = (type->prec_len > 0) ? type->prec_len : 0;
 	type->pad_len = type->width - type->len - type->prec_len;
@@ -23,14 +25,16 @@ static void				ft_pf_write_uint_2(t_type *type, int *rst)
 	if (type->is_left)
 	{
 		ft_pf_write_padding(type->prec_len, '0', rst);
-		ft_pf_write_put_base(type->temp, BASE_10, rst);
+		if (!type->print_none)
+			ft_pf_write_put_base(type->temp, BASE_10, rst);
 		ft_pf_write_padding(type->pad_len, type->padding, rst);
 	}
 	else
 	{
 		ft_pf_write_padding(type->pad_len, type->padding, rst);
 		ft_pf_write_padding(type->prec_len, '0', rst);
-		ft_pf_write_put_base(type->temp, BASE_10, rst);
+		if (!type->print_none)
+			ft_pf_write_put_base(type->temp, BASE_10, rst);
 	}
 }
 
@@ -40,7 +44,7 @@ void					ft_pf_write_uint(va_list vl, t_type *type, int *rst)
 	{
 		type->temp = (unsigned int)va_arg(vl, int);
 		if (type->is_precision && type->precision == 0 && type->temp == 0)
-			return ;
+			type->print_none = 1;
 		if (type->is_left || type->is_precision == 1 || type->is_width)
 			type->padding = ' ';
 		if (type->is_width && !type->is_precision && type->is_zero == 1
