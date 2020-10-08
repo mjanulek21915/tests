@@ -10,10 +10,13 @@ start=$(date +'%s')
 null_char="r"
 text_list=("|" )
 flag_list=("r" " " "-" "+" "0")
-width_list=("r" '*' "0" "1" "3" "4" "5" "42")
-prec_list=("r" '.*' "." ".0" ".1" ".3" ".4" ".5" ".42")
-conv_list=("p" "d" "i" "u" "x" "X")
+	width_list=("r" '*' "1" "12")
+	prec_list=(".")
 count_list=("0" "-5" "5")
+# width_list=("r" '*' "0" "1" "3" "4" "5" "42")
+# prec_list=("r" '.*' "." ".0" ".1" ".3" ".4" ".5" ".42")
+	# count_list=("6" "-6" "4" "-4" "0")
+conv_list=("p" "d" "i" "u" "x" "X")
 whole_list=("r" " " "-" "+" "0" '*' "1" '.*' ".0" ".1")
 path="logs/log_$start"
 
@@ -233,9 +236,7 @@ fi
 
 if [ $multiple_flags -eq 1 ]
 then
-	width_list=("r" '*' "1" "12")
-	prec_list=("r" '.*' ".1" ".12")
-	count_list=("6" "-6" "4" "-4" "0")
+
 	old_ifs=$IFS
 	IFS=""
 	for conv in "${conv_list[@]}"
