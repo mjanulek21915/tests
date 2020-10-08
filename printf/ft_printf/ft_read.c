@@ -18,11 +18,11 @@ static void					get_nums_1(t_type *type, char **str, va_list vl)
 
 	if (**str == '.')
 	{
+		type->is_precision = 1;
 		(*str)++;
 		temp = ft_read_atoi(str);
 		if (temp > -2)
 		{
-			type->is_precision = 1;
 			if (temp == -1)
 			{
 				type->precision = va_arg(vl, int);
@@ -33,6 +33,8 @@ static void					get_nums_1(t_type *type, char **str, va_list vl)
 		}
 		else
 			type->precision = 0;
+	printf("ft_read_get_nums_1 = %d\n", temp);
+	printf("type->precision ft_read_get_nums_1 = %d\n", type->precision);
 	}
 }
 
