@@ -50,7 +50,7 @@ int main(int ac, char **av)
 	char fmt[100];
 	int z = 100;
 
-	int num = -42;
+	int num = INT_MAX;
 
 
 	void *list[128];
