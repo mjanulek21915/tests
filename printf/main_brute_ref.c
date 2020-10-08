@@ -56,7 +56,7 @@ int main(int ac, char **av)
 	void *list[128];
 	char c = 'a';
 	list['c'] = (void *)c;
-	char s[100] = "cesi est un string";
+	char s[100] = "ces";
 	list['s'] = (void *)s;
 	void *p = (void *)num;
 	list['p'] = num;
