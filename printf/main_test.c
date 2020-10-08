@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "ft_printf/ft_printf.h"
 
 int main()
 {
-	ft_printf("pp %.50d\n", 10000);
+	printf("%5.d", 0);
 }

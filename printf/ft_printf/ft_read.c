@@ -31,6 +31,8 @@ static void					get_nums_1(t_type *type, char **str, va_list vl)
 			else
 				type->precision = temp;
 		}
+		else
+			type->precision = 0;
 	}
 }
 
