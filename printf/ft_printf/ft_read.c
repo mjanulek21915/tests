@@ -33,8 +33,6 @@ static void					get_nums_1(t_type *type, char **str, va_list vl)
 		}
 		else
 			type->precision = 0;
-	printf("ft_read_get_nums_1 = %d\n", temp);
-	printf("type->precision ft_read_get_nums_1 = %d\n", type->precision);
 	}
 }
 
