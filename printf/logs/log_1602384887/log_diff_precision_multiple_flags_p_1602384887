@@ -1,0 +1,577 @@
+LOG_DIFF conv : p
+DIFF : |%*5p| COUNT : 0
+test : |*5p|
+rst = 5
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%*5p| COUNT : -5
+test : |*5p|
+rst = 5
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%*5p| COUNT : 5
+test : |*5p|
+rst = 5
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% *5p| COUNT : 0
+test : | *5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% *5p| COUNT : -5
+test : | *5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% *5p| COUNT : 5
+test : | *5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%-*5p| COUNT : 0
+test : |-*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%-*5p| COUNT : -5
+test : |-*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%-*5p| COUNT : 5
+test : |-*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%+*5p| COUNT : 0
+test : |+*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%+*5p| COUNT : -5
+test : |+*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%+*5p| COUNT : 5
+test : |+*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%0*5p| COUNT : 0
+test : |0*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%0*5p| COUNT : -5
+test : |0*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%0*5p| COUNT : 5
+test : |0*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% *5p| COUNT : 0
+test : | *5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% *5p| COUNT : -5
+test : | *5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% *5p| COUNT : 5
+test : | *5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%  *5p| COUNT : 0
+test : |  *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%  *5p| COUNT : -5
+test : |  *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%  *5p| COUNT : 5
+test : |  *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% -*5p| COUNT : 0
+test : | -*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% -*5p| COUNT : -5
+test : | -*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% -*5p| COUNT : 5
+test : | -*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% +*5p| COUNT : 0
+test : | +*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% +*5p| COUNT : -5
+test : | +*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% +*5p| COUNT : 5
+test : | +*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% 0*5p| COUNT : 0
+test : | 0*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% 0*5p| COUNT : -5
+test : | 0*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% 0*5p| COUNT : 5
+test : | 0*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%-*5p| COUNT : 0
+test : |-*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%-*5p| COUNT : -5
+test : |-*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%-*5p| COUNT : 5
+test : |-*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%- *5p| COUNT : 0
+test : |- *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%- *5p| COUNT : -5
+test : |- *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%- *5p| COUNT : 5
+test : |- *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%--*5p| COUNT : 0
+test : |--*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%--*5p| COUNT : -5
+test : |--*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%--*5p| COUNT : 5
+test : |--*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%-+*5p| COUNT : 0
+test : |-+*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%-+*5p| COUNT : -5
+test : |-+*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%-+*5p| COUNT : 5
+test : |-+*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%-0*5p| COUNT : 0
+test : |-0*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%-0*5p| COUNT : -5
+test : |-0*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%-0*5p| COUNT : 5
+test : |-0*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%+*5p| COUNT : 0
+test : |+*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%+*5p| COUNT : -5
+test : |+*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%+*5p| COUNT : 5
+test : |+*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%+ *5p| COUNT : 0
+test : |+ *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%+ *5p| COUNT : -5
+test : |+ *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%+ *5p| COUNT : 5
+test : |+ *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%+-*5p| COUNT : 0
+test : |+-*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%+-*5p| COUNT : -5
+test : |+-*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%+-*5p| COUNT : 5
+test : |+-*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%++*5p| COUNT : 0
+test : |++*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%++*5p| COUNT : -5
+test : |++*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%++*5p| COUNT : 5
+test : |++*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%+0*5p| COUNT : 0
+test : |+0*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%+0*5p| COUNT : -5
+test : |+0*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%+0*5p| COUNT : 5
+test : |+0*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%0*5p| COUNT : 0
+test : |0*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%0*5p| COUNT : -5
+test : |0*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%0*5p| COUNT : 5
+test : |0*5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%0 *5p| COUNT : 0
+test : |0 *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%0 *5p| COUNT : -5
+test : |0 *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%0 *5p| COUNT : 5
+test : |0 *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%0-*5p| COUNT : 0
+test : |0-*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%0-*5p| COUNT : -5
+test : |0-*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%0-*5p| COUNT : 5
+test : |0-*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%0+*5p| COUNT : 0
+test : |0+*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%0+*5p| COUNT : -5
+test : |0+*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%0+*5p| COUNT : 5
+test : |0+*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%00*5p| COUNT : 0
+test : |00*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%00*5p| COUNT : -5
+test : |00*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%00*5p| COUNT : 5
+test : |00*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% *5p| COUNT : 0
+test : | *5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% *5p| COUNT : -5
+test : | *5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% *5p| COUNT : 5
+test : | *5p|
+rst = 6
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%  *5p| COUNT : 0
+test : |  *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%  *5p| COUNT : -5
+test : |  *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%  *5p| COUNT : 5
+test : |  *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% -*5p| COUNT : 0
+test : | -*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% -*5p| COUNT : -5
+test : | -*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% -*5p| COUNT : 5
+test : | -*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% +*5p| COUNT : 0
+test : | +*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% +*5p| COUNT : -5
+test : | +*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% +*5p| COUNT : 5
+test : | +*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% 0*5p| COUNT : 0
+test : | 0*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% 0*5p| COUNT : -5
+test : | 0*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |% 0*5p| COUNT : 5
+test : | 0*5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%  *5p| COUNT : 0
+test : |  *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%  *5p| COUNT : -5
+test : |  *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%  *5p| COUNT : 5
+test : |  *5p|
+rst = 7
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%   *5p| COUNT : 0
+test : |   *5p|
+rst = 8
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%   *5p| COUNT : -5
+test : |   *5p|
+rst = 8
+ref. : |0x7fffffff|
+rst = 12
+
+DIFF : |%   *5p| COUNT : 5
+test : |   *5p|
+rst = 8
+ref. : |0x7fffffff|
+rst = 12
+
