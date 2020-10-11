@@ -13,7 +13,7 @@
 #include "ft_printf.h"
 
 static void			ft_pf_pb_rec(unsigned long long n,
-char *base, unsigned long long len, int *rst)
+char *base, unsigned long long len, long long *rst)
 {
 	unsigned long long				temp;
 
@@ -24,7 +24,7 @@ char *base, unsigned long long len, int *rst)
 }
 
 void				ft_pf_write_put_base(unsigned long long n,
-char *base, int *rst)
+char *base, long long *rst)
 {
 	unsigned long long				len_base;
 

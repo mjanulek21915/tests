@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_pf_write_nlen.c                                 :+:      :+:    :+:   */
+/*   ft_pf_write_n_s.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjanulek <mjanulek@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,17 +12,27 @@
 
 #include "ft_printf.h"
 
-int					ft_pf_write_nlen(unsigned long long n, int base)
+void				ft_pf_write_n_s(void *ptr, int n, long long *rst, int size)
 {
-	int i;
+	char	*str;
 
-	i = 0;
-	if (n == 0)
-		return (1);
-	while (n)
+	str = (char *)ptr;
+	if (!str)
+		return ;
+	if (n == -1)
 	{
-		n = n / base;
-		i++;
+		while (*str)
+		{
+			ft_pf_putchar_s(str, rst, size);
+			str = str + size;
+		}
 	}
-	return (i);
+	else
+	{
+		while (n--)
+		{
+			ft_pf_putchar_s(str, rst, size);
+			str = str + size;
+		}
+	}
 }

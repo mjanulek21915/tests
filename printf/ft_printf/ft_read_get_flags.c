@@ -14,7 +14,8 @@
 
 void					ft_read_get_flags(t_type *type, char **str)
 {
-	while (**str == '+' || **str == '-' || **str == '0' || **str == ' ')
+	while (**str == '+' || **str == '-' || **str == '0' ||
+	**str == ' ' || **str == '#')
 	{
 		if (**str == '+')
 			type->is_signed = 1;
@@ -27,6 +28,8 @@ void					ft_read_get_flags(t_type *type, char **str)
 		}
 		if (**str == ' ')
 			type->is_space = 1;
+		if (**str == '#')
+			type->is_hash = 1;
 		(*str)++;
 	}
 }

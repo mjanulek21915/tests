@@ -14,9 +14,9 @@
 
 int					ft_printf(const char *str, ...)
 {
-	va_list	va;
-	char	*temp;
-	int		rst;
+	va_list			va;
+	char			*temp;
+	long long		rst;
 
 	if (!str)
 		return (0);

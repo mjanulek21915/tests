@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void				ft_pf_putchar(char *ptr, int *rst)
+void				ft_pf_putchar(char *ptr, long long *rst)
 {
 	write(1, ptr, 1);
 	*rst = *rst + 1;

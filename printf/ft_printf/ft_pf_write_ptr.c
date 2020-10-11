@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-static void				ft_pf_write_ptr_3(t_type *type, int *rst)
+static void			ft_pf_write_ptr_3(t_type *type, long long *rst)
 {
 	if (type->is_left)
 	{
@@ -34,7 +34,7 @@ static void				ft_pf_write_ptr_3(t_type *type, int *rst)
 	}
 }
 
-static void				ft_pf_write_ptr_2(t_type *type, int *rst)
+static void			ft_pf_write_ptr_2(t_type *type, long long *rst)
 {
 	type->len = ft_pf_write_nlen(type->temp, 16);
 	type->prec_len = type->precision - type->len;
@@ -48,7 +48,7 @@ static void				ft_pf_write_ptr_2(t_type *type, int *rst)
 	ft_pf_write_ptr_3(type, rst);
 }
 
-static void				ft_pf_write_ptr_1(t_type *type)
+static void			ft_pf_write_ptr_1(t_type *type)
 {
 	if (type->is_left || type->is_precision == 1 || type->is_width)
 		type->padding = ' ';
@@ -68,7 +68,7 @@ static void				ft_pf_write_ptr_1(t_type *type)
 	}
 }
 
-void					ft_pf_write_ptr(va_list vl, t_type *type, int *rst)
+void				ft_pf_write_ptr(va_list vl, t_type *type, long long *rst)
 {
 	if (type->type == 'p')
 	{

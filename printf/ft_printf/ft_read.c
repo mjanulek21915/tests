@@ -70,6 +70,7 @@ static void					ft_read_init(t_type *type)
 	type->is_neg = 0;
 	type->is_neg_prec = 0;
 	type->is_changed = 0;
+	type->is_hash = 0;
 	type->print_none = 0;
 	type->width_star = 0;
 	type->prec_star = 0;
@@ -88,9 +89,12 @@ static void					ft_read_init_2(t_type *type)
 	type->temp = 0;
 	type->ptr_temp = 0;
 	type->ptr = 0;
+	type->is_long = 0;
+	type->is_short = 0;
+	type->data_size = 1;
 }
 
-void						ft_read(char **str, va_list vl, int *rst)
+void						ft_read(char **str, va_list vl, long long *rst)
 {
 	t_type		type;
 	char		*temp;
@@ -101,6 +105,7 @@ void						ft_read(char **str, va_list vl, int *rst)
 	ft_read_init_2(&type);
 	ft_read_get_flags(&type, &temp);
 	get_nums(&type, &temp, vl);
+	ft_read_get_length(&type, &temp);
 	if (!(ft_read_iz_in(*temp, CONV)))
 		return ;
 	type.type = *temp;

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_pf_strlen.c                                     :+:      :+:    :+:   */
+/*   ft_pf_write_to_ptr.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjanulek <mjanulek@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,14 +12,22 @@
 
 #include "ft_printf.h"
 
-int					ft_pf_strlen(char *str)
+void				ft_pf_write_to_ptr(va_list vl, t_type *type, long long *rst)
 {
-	int i;
+	t_ptr temp;
 
-	i = 0;
-	if (!str)
-		return (0);
-	while (*str++)
-		i++;
-	return (i);
+	if (type->type == 'n')
+	{
+		temp.ptr = (int *)va_arg(vl, int *);
+		if (type->is_long == 1)
+			*(temp.l) = (long)(*rst);
+		else if (type->is_long == 2)
+			*(temp.ll) = (long long)(*rst);
+		else if (type->is_short == 1)
+			*(temp.h) = (short)(*rst);
+		else if (type->is_short == 2)
+			*(temp.hh) = (char)(*rst);
+		else
+			*(temp.i) = (int)(*rst);
+	}
 }

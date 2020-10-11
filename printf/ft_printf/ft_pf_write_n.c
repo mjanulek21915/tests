@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void					ft_pf_write_n(char *str, int n, int *rst)
+void					ft_pf_write_n(char *str, int n, long long *rst)
 {
 	if (!str)
 		return ;

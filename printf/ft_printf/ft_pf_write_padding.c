@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void				ft_pf_write_padding(int n, char c, int *rst)
+void				ft_pf_write_padding(int n, char c, long long *rst)
 {
 	int i;
 

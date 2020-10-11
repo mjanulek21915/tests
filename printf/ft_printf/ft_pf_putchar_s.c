@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_pf_putchar.c                                    :+:      :+:    :+:   */
+/*   ft_pf_putchar_s.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjanulek <mjanulek@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,8 +12,8 @@
 
 #include "ft_printf.h"
 
-void				ft_pf_putchar(char *ptr, int *rst)
+void					ft_pf_putchar_s(void *ptr, long long *rst, int size)
 {
-	write(1, ptr, 1);
+	write(1, ptr, size);
 	*rst = *rst + 1;
 }

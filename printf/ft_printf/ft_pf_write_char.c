@@ -12,24 +12,33 @@
 
 #include "ft_printf.h"
 
-static void				ft_pf_write_char2(char temp, t_type *type, int *rst)
+static void			get_char(va_list vl, t_type *type)
+{
+	if (type->is_long == 1)
+	{
+		type->data.lc = (wint_t)va_arg(vl, wint_t);
+		type->data_size = sizeof(wint_t);
+	}
+	else
+		type->data.c = (char)va_arg(vl, int);
+}
+
+static void			ft_pf_write_char2(t_type *type, long long *rst)
 {
 	if (type->is_left)
 	{
-		ft_pf_putchar(&temp, rst);
+		ft_pf_putchar_s(&(type->data.c), rst, type->data_size);
 		ft_pf_write_padding(type->pad_len, type->padding, rst);
 	}
 	else
 	{
 		ft_pf_write_padding(type->pad_len, type->padding, rst);
-		ft_pf_putchar(&temp, rst);
+		ft_pf_putchar_s(&(type->data.c), rst, type->data_size);
 	}
 }
 
-void					ft_pf_write_char(va_list vl, t_type *type, int *rst)
+void				ft_pf_write_char(va_list vl, t_type *type, long long *rst)
 {
-	char	temp;
-
 	if (type->type == 'c')
 	{
 		type->padding = ' ';
@@ -43,7 +52,7 @@ void					ft_pf_write_char(va_list vl, t_type *type, int *rst)
 		type->pad_len = type->width - 1;
 		if (type->pad_len < 0)
 			type->pad_len = 0;
-		temp = (char)va_arg(vl, int);
-		ft_pf_write_char2(temp, type, rst);
+		get_char(vl, type);
+		ft_pf_write_char2(type, rst);
 	}
 }

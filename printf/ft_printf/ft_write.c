@@ -12,8 +12,11 @@
 
 #include "ft_printf.h"
 
-void					ft_write(t_type *type, va_list vl, int *rst)
+void					ft_write(t_type *type, va_list vl, long long *rst)
 {
+	if ((type->is_long && type->is_short) ||
+	(type->is_long > 2 || type->is_short > 2))
+		return ;
 	ft_pf_write_str(vl, type, rst);
 	ft_pf_write_hex(vl, type, rst);
 	ft_pf_write_ptr(vl, type, rst);
@@ -22,4 +25,5 @@ void					ft_write(t_type *type, va_list vl, int *rst)
 	ft_pf_write_uint(vl, type, rst);
 	ft_pf_write_percent(type, rst);
 	ft_pf_write_char(vl, type, rst);
+	ft_pf_write_to_ptr(vl, type, rst);
 }

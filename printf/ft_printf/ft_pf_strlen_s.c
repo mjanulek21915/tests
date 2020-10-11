@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_read_iz_in.c                                    :+:      :+:    :+:   */
+/*   ft_pf_strlen_s.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjanulek <mjanulek@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,13 +12,36 @@
 
 #include "ft_printf.h"
 
-int					ft_read_iz_in(char c, char *str)
+static int			strlen_wchar(void *ptr)
 {
-	while (*str)
-	{
-		if (*str == c)
-			return (1);
-		str++;
-	}
-	return (0);
+	int			i;
+	wchar_t		*str;
+
+	str = (wchar_t *)ptr;
+	i = 0;
+	while (*str++)
+		i++;
+	return (i);
+}
+
+static int			strlen_char(void *ptr)
+{
+	int			i;
+	char		*str;
+
+	str = (char *)ptr;
+	i = 0;
+	while (*str++)
+		i++;
+	return (i);
+}
+
+int					ft_pf_strlen_s(void *ptr, int mode)
+{
+	if (!ptr)
+		return (0);
+	if (mode == 1)
+		return (strlen_wchar(ptr));
+	else
+		return (strlen_char(ptr));
 }

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_pf_write_n.c                                    :+:      :+:    :+:   */
+/*   ft_read_get_length.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjanulek <mjanulek@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,24 +12,14 @@
 
 #include "ft_printf.h"
 
-void					ft_pf_write_n(char *str, int n, int *rst)
+void					ft_read_get_length(t_type *type, char **str)
 {
-	if (!str)
-		return ;
-	if (n == -1)
+	while (**str == 'l' || **str == 'h')
 	{
-		while (*str)
-		{
-			ft_pf_putchar(str, rst);
-			str++;
-		}
-	}
-	else
-	{
-		while (n-- && *str)
-		{
-			ft_pf_putchar(str, rst);
-			str++;
-		}
+		if (**str == 'l')
+			type->is_long = type->is_long + 1;
+		else if (**str == 'h')
+			type->is_short = type->is_short + 1;
+		(*str)++;
 	}
 }

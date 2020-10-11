@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_write.c                                         :+:      :+:    :+:   */
+/*   ft_pf_write_get_sign_s.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjanulek <mjanulek@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,14 +12,26 @@
 
 #include "ft_printf.h"
 
-void					ft_write(t_type *type, va_list vl, int *rst)
+int						ft_pf_write_get_sign_s(t_type *type)
 {
-	ft_pf_write_str(vl, type, rst);
-	ft_pf_write_hex(vl, type, rst);
-	ft_pf_write_ptr(vl, type, rst);
-	ft_pf_write_hex_a(vl, type, rst);
-	ft_pf_write_int(vl, type, rst);
-	ft_pf_write_uint(vl, type, rst);
-	ft_pf_write_percent(type, rst);
-	ft_pf_write_char(vl, type, rst);
+	type->sign = 0;
+	if (type->data.temp < 0)
+	{
+		type->sign = '-';
+		type->is_neg = 1;
+		type->data.u_temp = ~type->data.u_temp + 1;
+		return (1);
+	}
+	else if (type->is_signed)
+	{
+		type->sign = '+';
+		return (0);
+	}
+	else if (type->is_space)
+	{
+		type->sign = 0;
+		return (0);
+	}
+	type->sign = 0;
+	return (0);
 }

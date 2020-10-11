@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void					ft_pf_write_percent(t_type *type, int *rst)
+void					ft_pf_write_percent(t_type *type, long long *rst)
 {
 	if (type->type == '%')
 	{
