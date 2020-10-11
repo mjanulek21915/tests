@@ -16,7 +16,7 @@ count_list=("0" "-5" "5")
 # width_list=("r" '*' "0" "1" "3" "4" "5" "42")
 # prec_list=("r" '.*' "." ".0" ".1" ".3" ".4" ".5" ".42")
 	# count_list=("6" "-6" "4" "-4" "0")
-conv_list=("p" "d" "i" "u" "x" "X")
+conv_list=("c" "s")
 whole_list=("r" " " "-" "+" "0" '*' "1" '.*' ".0" ".1")
 path="logs/log_$start"
 
