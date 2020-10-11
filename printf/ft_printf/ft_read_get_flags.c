@@ -14,8 +14,7 @@
 
 void					ft_read_get_flags(t_type *type, char **str)
 {
-	while (**str == '+' || **str == '-' || **str == '0' ||
-	**str == ' ' || **str == '#')
+	while (**str == '+' || **str == '-' || **str == '0' || **str == ' ' || **str == '#')
 	{
 		if (**str == '+')
 			type->is_signed = 1;
